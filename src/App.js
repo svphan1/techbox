@@ -6,6 +6,9 @@ import NavBar from "./components/NavBar";
 import ProductList from "./components/ProductList";
 import Details from "./components/Details";
 import Cart from "./components/Cart";
+import IPhone from "./components/IPhone";
+import Samsung from "./components/Samsung";
+import Google from "./components/Google";
 import NotFound from "./components/NotFound";
 
 class App extends Component {
@@ -15,6 +18,9 @@ class App extends Component {
         <NavBar />
         <Switch>
           <Route exact path="/" component={ProductList} />
+          <Route path="/iphone" component={IPhone} />
+          <Route path="/samsung" component={Samsung} />
+          <Route path="/google" component={Google} />
           <Route path="/details" component={Details} />
           <Route path="/cart" component={Cart} />
           <Route component={NotFound} />

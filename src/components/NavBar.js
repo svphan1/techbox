@@ -7,6 +7,10 @@ const logoStyle = {
   width: "2.3rem"
 };
 
+const links = {
+  color: "white"
+};
+
 export default class NavBar extends Component {
   render() {
     return (
@@ -21,26 +25,26 @@ export default class NavBar extends Component {
         </Link>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav align-items-center">
-            <li className="nav-item ml-5" href="#">
-              <Link to="/" className="nav-link">
-                Products
+            <List className="nav-item ml-5">
+              <Link to="/" className="nav-link" style={links}>
+                Home
               </Link>
-            </li>
-            <li className="nav-item ml-5">
-              <Link to="/" className="nav-link">
+            </List>
+            <List className="nav-item ml-5">
+              <Link to="/iphone" className="nav-link" style={links}>
                 iPhone
               </Link>
-            </li>
-            <li className="nav-item ml-5">
-              <Link to="/" className="nav-link">
+            </List>
+            <List className="nav-item ml-5">
+              <Link to="/samsung" className="nav-link" style={links}>
                 Samsung
               </Link>
-            </li>
-            <li className="nav-item ml-5">
-              <Link to="/" className="nav-link">
+            </List>
+            <List className="nav-item ml-5">
+              <Link to="/google" className="nav-link" style={links}>
                 Google
               </Link>
-            </li>
+            </List>
           </ul>
         </div>
 
@@ -80,14 +84,38 @@ const ButtonContainer = styled.button`
   border-radius: 1rem;
   padding: 0.4rem;
   transition: all 0.2s ease-in-out;
-  &:focus {
-    outline: 0;
-  }
-  &:hover {
-    background: var(--mainGray);
-  }
+    &:focus {
+      outline: 0;
+    }
+    &:hover {
+      background: var(--mainGray);
+    }
 `;
 
 const Icons = styled.i`
   color: white;
+`;
+
+const List = styled.li`
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+  padding-bottom: 5px;
+    &:hover {
+      opacity: 1;
+    }
+    &::before {
+      transition: 300ms;
+      height: 1px;
+      content: "";
+      position: absolute;
+      background-color: white;
+    }
+    &::before {
+      width: 0%;
+      bottom: 10px;
+    }
+    &:hover::before {
+      width: 100%;
+    }
 `;
