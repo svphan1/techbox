@@ -2,18 +2,19 @@
   --mainBlue: #2a2a72;
   --lightBlue: #009ffd;
   --mainWhite: #f3f3f3;
+  --mainGray: rgb(133, 142, 150);
   --mainDark: #232528;
   --mainYellow: #ffa400; 
 }
 
 body {
-  font-family: 'Oswald', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }
 
 .text-title {
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif !important;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
@@ -25,3 +26,4 @@ body {
 .text-bright {
   color: var(--lightBlue);
 }
+
