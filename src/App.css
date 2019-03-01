@@ -1,7 +1,7 @@
 :root {
   --mainBlue: #2a2a72;
   --lightBlue: #009ffd;
-  --mainWhite: #f3f3f3;
+  --mainWhite: rgb(255, 255, 255);
   --mainGray: rgb(133, 142, 150);
   --mainDark: rgb(68, 68, 68);
   --mainYellow: #ffa400; 
@@ -10,7 +10,13 @@
 body {
   font-family: 'Montserrat', sans-serif !important;
   background: var(--mainWhite) !important;
+  /* background: black !important; */
   color: var(--mainDark) !important;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 
 .text-title {

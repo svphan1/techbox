@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar";
-import ProductList from "./components/ProductList";
+import Home from "./components/Home";
 import Details from "./components/Details";
 import Cart from "./components/Cart";
 import IPhone from "./components/IPhone";
@@ -17,7 +17,7 @@ class App extends Component {
       <React.Fragment>
         <NavBar />
         <Switch>
-          <Route exact path="/" component={ProductList} />
+          <Route exact path="/" component={Home} />
           <Route path="/iphone" component={IPhone} />
           <Route path="/samsung" component={Samsung} />
           <Route path="/google" component={Google} />
