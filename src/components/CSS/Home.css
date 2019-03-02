@@ -1,0 +1,19 @@
+.col {
+  width: 50% !important;
+}
+
+.title {
+  text-align: center;
+}
+
+h3 {
+  line-height: 2.6rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+hr {
+  border: none;
+  height: 1rem;
+  background-color: white;
+}

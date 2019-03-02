@@ -2,20 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import logo from "../box.png";
 import styled from "styled-components";
-import { ButtonContainer } from "./CSS/Button";
+import { NavButton } from "./CSS/NavButton";
 import { List } from "./CSS/List";
-
-const Image = styled.img`
-  width: 2.3rem
-`;
-
-const I = styled.i`
-  color: white
-`
-
-const Nav = styled.nav`
-  background-color: var(--mainDark)
-`;
 
 export default class NavBar extends Component {
   render() {
@@ -54,18 +42,18 @@ export default class NavBar extends Component {
         </div>
 
         <span className="ml-auto">
-          <ButtonContainer>
+          <NavButton>
             <I className="fas fa-search"/>
-          </ButtonContainer>
+          </NavButton>
         </span>
         <Link to="/cart" className="ml-4">
-          <ButtonContainer>
+          <NavButton>
             <span className="mr-2">
               <I className="fas fa-shopping-cart cart"/>
             </span>
-          </ButtonContainer>
+          </NavButton>
         </Link>
-        <ButtonContainer
+        <NavButton
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -75,8 +63,20 @@ export default class NavBar extends Component {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon" />
-        </ButtonContainer>
+        </NavButton>
       </Nav>
     );
   }
 }
+
+const Image = styled.img`
+  width: 2.3rem
+`;
+
+const I = styled.i`
+  color: white
+`;
+
+const Nav = styled.nav`
+  background-color: var(--mainDark)
+`;

@@ -1,19 +1,18 @@
 import styled from "styled-components";
 import "../../App.css";
 
-export const Button = styled.button`
-  font-size: 1rem;
+export const NavButton = styled.button`
+  font-size: 1.4rem;
   background: transparent;
-  border: 0.15rem solid var(--mainDark);
+  border: 0.05rem solid var(--mainDark);
   cursor: pointer;
-  border-radius: 3rem;
-  padding: 0.4rem 2rem;
+  border-radius: 1rem;
+  padding: 0.4rem;
   transition: all 0.2s ease-in-out;
     &:focus {
       outline: 0;
     }
     &:hover {
-      color: white;
-      background: var(--mainDark);
+      background: var(--mainGray);
     }
 `;
