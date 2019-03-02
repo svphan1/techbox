@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import logo from "../box.png";
+import logo from "./img/box.png";
 import styled from "styled-components";
-import { NavButton } from "./CSS/NavButton";
-import { List } from "./CSS/List";
+import { NavButton } from "./css/NavButton";
+import { List } from "./css/List";
 
 export default class NavBar extends Component {
   render() {

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import BestSeller from "./BestSeller";
-import { Button } from "./CSS/Button";
-import { Title } from "./CSS/Title";
-import { HomeImage } from "./CSS/HomeImage";
-import "./CSS/Home.css";
+import { Button } from "./css/Button";
+import { Title } from "./css/Title";
+import { HomeImage } from "./css/HomeImage";
+import "./css/Home.css";
 import fold from "./img/fold.png";
 
 export default class ProductList extends Component {
