@@ -8,9 +8,6 @@ import "./css/Home.css";
 import fold from "./img/fold.png";
 
 export default class ProductList extends Component {
-  state = {
-    products: []
-  };
   render() {
     return (
       <React.Fragment>
@@ -31,7 +28,7 @@ export default class ProductList extends Component {
         </div>
         <hr className="home-hr" />
 
-        <div className="container">
+        <div className="container carousel">
           <BestSeller />
         </div>
       </React.Fragment>

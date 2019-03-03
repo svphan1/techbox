@@ -26,3 +26,7 @@ h3 {
   height: 4px;
   background-color: black;
 }
+
+.carousel {
+  padding: 0 4rem 0 4rem;
+}
