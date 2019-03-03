@@ -14,7 +14,7 @@ export default class Product extends Component {
   render() {
     var settings = {
       centerMode: true,
-      centerPadding: "10rem",
+      centerPadding: "0rem",
       slidesToShow: 3,
       responsive: [
         {
@@ -23,7 +23,7 @@ export default class Product extends Component {
             arrows: false,
             centerMode: true,
             centerPadding: "40px",
-            slidesToShow: 3
+            slidesToShow: 2
           }
         },
         {

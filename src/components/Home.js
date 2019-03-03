@@ -29,9 +29,11 @@ export default class ProductList extends Component {
             </div>
           </div>
         </div>
-        <hr class="home-hr"/>
+        <hr className="home-hr" />
 
-        <BestSeller />
+        <div className="container">
+          <BestSeller />
+        </div>
       </React.Fragment>
     );
   }
