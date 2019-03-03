@@ -3,18 +3,18 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import photo1 from "./img/product-1.png";
-import photo2 from "./img/product-2.png";
-import photo3 from "./img/product-3.png";
-import photo4 from "./img/product-4.png";
-import photo5 from "./img/product-5.png";
-import photo6 from "./img/product-6.png";
+import note9 from "./img/galaxynote9.png";
+import pixel3xl from "./img/pixel3xl.png";
+import iphonexsmax from "./img/iphonexsmax.png";
+import iphonexr from "./img/iphonexr.png";
+import galaxys10 from "./img/galaxys10.png";
+import iphone7 from "./img/iphone7.png";
 
 export default class Product extends Component {
   render() {
     var settings = {
       centerMode: true,
-      centerPadding: "100px",
+      centerPadding: "10rem",
       slidesToShow: 3,
       responsive: [
         {
@@ -39,31 +39,37 @@ export default class Product extends Component {
     };
     return (
       <React.Fragment>
-        <BestSellerTitle className="best-seller">Best sellers</BestSellerTitle>
+        <BestSellerTitle className="best-seller">Best Sellers</BestSellerTitle>
         <Slider {...settings}>
           <Card className="photo-card">
-            <img src={photo1} alt="1" />
-            <CardName>iPhoneX</CardName>
+            <Image src={note9} alt="1" />
+            <hr className="phone-hr"/>
+            <CardName>Samsung <br/> Galaxy Note 9</CardName>
+          </Card> 
+          <Card className="photo-card">
+            <Image src={pixel3xl} alt="Pixel 3 XL"/>
+            <hr className="phone-hr"/>
+            <CardName>Google <br/> Pixel 3 XL</CardName>
           </Card>
           <Card className="photo-card">
-            <img src={photo2} alt="1" />
-            <CardName>iPhoneX</CardName>
+            <Image src={iphonexsmax} alt="iPhone XS Max" />
+            <hr className="phone-hr"/>
+            <CardName>Apple <br/> iPhone XS Max</CardName>
           </Card>
           <Card className="photo-card">
-            <img src={photo3} alt="1" />
-            <CardName>iPhoneX</CardName>
+            <Image src={iphonexr} alt="iPhone XR" />
+            <hr className="phone-hr"/>
+            <CardName>Apple <br/> iPhone XR</CardName>
           </Card>
           <Card className="photo-card">
-            <img src={photo4} alt="1" />
-            <CardName>iPhoneX</CardName>
+            <Image src={galaxys10} alt="Samsung S10" />
+            <hr className="phone-hr"/>
+            <CardName>Samsung <br/> Galaxy S10</CardName>
           </Card>
           <Card className="photo-card">
-            <img src={photo5} alt="1" />
-            <CardName>iPhoneX</CardName>
-          </Card>
-          <Card className="photo-card">
-            <img src={photo6} alt="1" />
-            <CardName>iPhoneX</CardName>
+            <Image src={iphone7} alt="iPhone 7" />
+            <hr className="phone-hr"/>
+            <CardName>Apple <br/> iPhone X</CardName>
           </Card>
         </Slider>
       </React.Fragment>
@@ -75,18 +81,28 @@ const BestSellerTitle = styled.h3`
   font-family: "Prompt", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 2.5rem;
-  line-height: 3.6rem;
+  font-size: 2.2rem;
 `;
 
 const Card = styled.div`
+border: 1px solid #eee;
   // box-shadow: 0 20px 50px rgb(0, 0, 0, .5);
-  padding: 3rem 0 4rem 0;
-  z-index: 1;
-  background-color: transparent;
+  // padding: 3rem 0 4rem 0;
+  // z-index: 1;
+  // background-color: transparent;
 `;
 
 const CardName = styled.h2`
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1.2rem;
   text-align: center;
   margin-top: 2rem;
 `;
+
+const Image = styled.img`
+  width: 12rem;
+  height: 24rem;
+  margin: auto;
+  margin-top: 3rem;
+`
