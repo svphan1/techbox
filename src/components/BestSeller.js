@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
+import { CardButton } from "./css/CardButton";
+import "./css/BestSeller.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import note9 from "./img/galaxynote9.png";
@@ -15,7 +17,7 @@ function NextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block",background: "black" }}
+      style={{ ...style, display: "block",background: "rgb(250,250,250)" }}
       onClick={onClick}
     />
   );
@@ -26,7 +28,7 @@ function PreviousArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" }}
+      style={{ ...style, display: "block", background: "rgb(250,250,250)" }}
       onClick={onClick}
     />
   );
@@ -72,6 +74,7 @@ export default class Product extends Component {
             <CardName>
               Samsung <br /> Galaxy Note 9
             </CardName>
+            <CardButton>Learn more</CardButton>
           </Card>
           <Card className="photo-card">
             <Image src={pixel3xl} alt="Pixel 3 XL" />
@@ -79,6 +82,7 @@ export default class Product extends Component {
             <CardName>
               Google <br /> Pixel 3 XL
             </CardName>
+            <CardButton>Learn more</CardButton>
           </Card>
           <Card className="photo-card">
             <Image src={iphonexsmax} alt="iPhone XS Max" />
@@ -86,6 +90,7 @@ export default class Product extends Component {
             <CardName>
               Apple <br /> iPhone XS Max
             </CardName>
+            <CardButton>Learn more</CardButton>
           </Card>
           <Card className="photo-card">
             <Image src={iphonexr} alt="iPhone XR" />
@@ -93,6 +98,7 @@ export default class Product extends Component {
             <CardName>
               Apple <br /> iPhone XR
             </CardName>
+            <CardButton>Learn more</CardButton>
           </Card>
           <Card className="photo-card">
             <Image src={galaxys10} alt="Samsung S10" />
@@ -100,6 +106,7 @@ export default class Product extends Component {
             <CardName>
               Samsung <br /> Galaxy S10
             </CardName>
+            <CardButton>Learn more</CardButton>
           </Card>
           <Card className="photo-card">
             <Image src={iphone7} alt="iPhone 7" />
@@ -107,6 +114,7 @@ export default class Product extends Component {
             <CardName>
               Apple <br /> iPhone X
             </CardName>
+            <CardButton>Learn more</CardButton>
           </Card>
         </Slider>
       </React.Fragment>
@@ -133,7 +141,7 @@ const Card = styled.div`
 const CardName = styled.h2`
   font-family: Helvetica;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
   margin-top: 2rem;
 `;

@@ -1,0 +1,8 @@
+.slick-prev:before, .slick-next:before  {
+  color: black !important;
+  font-size: 3rem !important;
+}
+
+.slick-prev:before {
+  margin-left: -1.9rem !important;
+}
