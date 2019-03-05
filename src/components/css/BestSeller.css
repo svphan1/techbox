@@ -6,3 +6,11 @@
 .slick-prev:before {
   margin-left: -1.9rem !important;
 }
+
+.slick-dots {
+  padding-bottom: 3rem !important;
+}
+
+p {
+  text-align: center !important;
+}

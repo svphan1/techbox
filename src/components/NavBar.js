@@ -25,7 +25,7 @@ export default class NavBar extends Component {
             </List>
             <List className="nav-item ml-5">
               <Link to="/iphone" className="nav-link">
-                iPhone
+                Apple
               </Link>
             </List>
             <List className="nav-item ml-5">
@@ -36,6 +36,11 @@ export default class NavBar extends Component {
             <List className="nav-item ml-5">
               <Link to="/google" className="nav-link">
                 Google
+              </Link>
+            </List>
+            <List className="nav-item ml-5">
+              <Link to="/lg" className="nav-link">
+                LG
               </Link>
             </List>
           </ul>

@@ -6,6 +6,8 @@ import { Title } from "./css/Title";
 import { HomeImage } from "./css/HomeImage";
 import "./css/Home.css";
 import fold from "./img/fold.png";
+import apple from "./img/applecover.png";
+import android from "./img/androidcover.png";
 
 export default class ProductList extends Component {
   render() {
@@ -31,6 +33,10 @@ export default class ProductList extends Component {
         <div className="container carousel">
           <BestSeller />
         </div>
+
+        <hr className="home-hr" />
+
+        <img src={apple} alt="apple" width="100%" />
       </React.Fragment>
     );
   }
