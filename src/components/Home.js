@@ -12,6 +12,9 @@ import att from "./img/att.svg";
 import tmobile from "./img/tmobile.svg";
 import sprint from "./img/sprint.svg";
 import unlocked from "./img/unlocked.svg";
+import shipping from "./img/shipping.png";
+import paypal from "./img/paypal.png";
+import gear from "./img/gear.png";
 
 export default class ProductList extends Component {
   render() {
@@ -34,22 +37,35 @@ export default class ProductList extends Component {
         </div>
         <hr className="home-hr" />
 
+        <h4 class="compatible">Compatible phones for all carriers</h4>
+        <div class="container carriers">
+          <img src={verizon} className="carrier" alt="verizon" />
+          <img src={att} className="carrier" alt="att" />
+          <img src={tmobile} className="carrier" alt="tmobile" />
+          <img src={sprint} className="carrier" alt="sprint" />
+          <img src={unlocked} className="carrier" alt="unlocked" />
+        </div>
+
         <div className="container carousel">
           <BestSeller />
         </div>
 
         <hr className="home-hr" />
 
-        <h4 class="compatible">Compatible phones for all carriers</h4>
-        <div class="container carriers">
-          <img src={verizon} className="carrier" alt="verizon" width="20%" />
-          <img src={att} className="carrier" alt="att" width="20%" />
-          <img src={tmobile} className="carrier" alt="tmobile" width="20%" />
-          <img src={sprint} className="carrier" alt="sprint" width="20%" />
-          <img src={unlocked} className="carrier" alt="unlocked" width="20%" />
-        </div>
-
         <img src={apple} alt="apple" width="100%" />
+        <h1 class="caption">Get the products you want, <br /> the way you want it.</h1>
+
+        <div className="container">
+          <div className="ad-section">
+            <div className="ad">
+
+            </div>
+            <div className="ad">
+            </div>
+            <div className="ad">
+            </div>
+          </div>
+        </div>
       </React.Fragment>
     );
   }
