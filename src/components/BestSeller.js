@@ -74,7 +74,7 @@ export default class Product extends Component {
             <CardName>
               Samsung <br /> Galaxy Note 9
             </CardName>
-            <p>Starting at $499</p>
+            <p>Starting at $29.89/mo. or $699</p>
             <CardButton>Learn more</CardButton>
           </Card>
           <Card className="photo-card">
@@ -83,7 +83,7 @@ export default class Product extends Component {
             <CardName>
               Google <br /> Pixel 3 XL
             </CardName>
-            <p>Starting at $20.83/mo. or $499</p>
+            <p>Starting at $34.19/mo. or $819</p>
             <CardButton>Learn more</CardButton>
           </Card>
           <Card className="photo-card">

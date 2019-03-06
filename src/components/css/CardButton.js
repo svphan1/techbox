@@ -3,11 +3,13 @@ import "../../App.css";
 
 export const CardButton = styled.button`
   font-size: .8rem;
-  background: transparent;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(87, 52, 140);
   display: flex;
   margin: 0 auto;
   margin-bottom: 2rem;
-  border: 0.15rem solid var(--mainDark);
+  border: 0.15rem solid rgb(87, 52, 140);
   cursor: pointer;
   border-radius: 3rem;
   padding: 0.1rem 0.8rem;
@@ -17,6 +19,6 @@ export const CardButton = styled.button`
     }
     &:hover {
       color: white;
-      background: var(--mainDark);
+      text-decoration: underline;
     }
 `;

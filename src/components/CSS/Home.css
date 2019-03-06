@@ -31,3 +31,25 @@ h3 {
 .carousel {
   padding: 0 4rem 0 4rem;
 }
+
+.compatible {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.carriers{
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.carrier {
+  width: 9rem;
+  height: 4rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
