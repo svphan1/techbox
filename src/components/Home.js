@@ -53,16 +53,23 @@ export default class ProductList extends Component {
         <hr className="home-hr" />
 
         <img src={apple} alt="apple" width="100%" />
-        <h1 class="caption">Get the products you want, <br /> the way you want it.</h1>
+        <h1 class="caption">
+          Get the products you want, <br /> the way you want it.
+        </h1>
 
-        <div className="container">
+        <div className="container advert">
           <div className="ad-section">
             <div className="ad">
-
+              <img src={shipping} className="shipping" alt="shipping" />
+              <p>Fast and free delivery.</p>
             </div>
             <div className="ad">
+              <img src={paypal} className="paypal" alt="paypal" />
+              <p>PayPal Protection</p>
             </div>
             <div className="ad">
+              <img src={gear} className="gear" alt="gear" />
+              <p>Personal Setup</p>
             </div>
           </div>
         </div>
