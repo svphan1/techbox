@@ -52,24 +52,41 @@ export default class ProductList extends Component {
 
         <hr className="home-hr" />
 
-        <img src={apple} alt="apple" width="100%" />
-        <h1 class="caption">
-          Get the products you want, <br /> the way you want it.
-        </h1>
+        <div>
+          <img src={apple} alt="apple" width="100%" />
+          <h1 class="caption">
+            Get the products you want, <br /> the way you want it.
+          </h1>
+        </div>
 
-        <div className="container advert">
+        <div className="container">
           <div className="ad-section">
             <div className="ad">
               <img src={shipping} className="shipping" alt="shipping" />
-              <p>Fast and free delivery.</p>
+              <p className="ad-title">Fast and free delivery.</p>
+              <p className="paragraph">
+                Pick up most items — usually within an hour — or let us know if
+                someone else is picking up for you. We can even help set up your
+                new Apple products.
+              </p>
             </div>
             <div className="ad">
               <img src={paypal} className="paypal" alt="paypal" />
-              <p>PayPal Protection</p>
+              <p className="ad-title">PayPal Protection</p>
+              <p className="paragraph">
+                Get free next-day delivery on any in-stock iPhone and free
+                two-day delivery on almost everything else. Faster options are
+                also available.*
+              </p>
             </div>
             <div className="ad">
               <img src={gear} className="gear" alt="gear" />
-              <p>Personal Setup</p>
+              <p className="ad-title">Personal</p>
+              <p className="paragraph">
+                For in-stock items in certain locations, we offer same-day
+                courier delivery for only $9. You can select this option at
+                checkout if it’s available.
+              </p>
             </div>
           </div>
         </div>

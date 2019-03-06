@@ -57,6 +57,7 @@ h3 {
 .caption {
   font-family: Helvetica Arial, Helvetica, sans-serif;
   font-weight: bold;
+  color: #333;
   position: relative;
   top: -14rem;
   text-align: center;
@@ -64,7 +65,28 @@ h3 {
 
 .ad {
   width: 33.33%;
+  margin-top: -3rem;
   font-family: "Helvetica Neue", sans-serif;
   text-align: center;
   float: left;
+}
+
+.ad-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.shipping {
+  width: 3rem;
+}
+
+.paypal {
+  width: 2.5rem;
+  margin-top: 2px;
+  margin-bottom: 0.4rem;
+}
+
+.gear {
+  width: 3rem;
 }
