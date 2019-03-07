@@ -122,27 +122,27 @@ export default class ProductList extends Component {
           <div className="container">
             <ul className="social">
               <li className="social-items">
-                <a href="#">
+                <a href="https://www.facebook.com/" target="_blank">
                   <img className="social-img" src={facebook} />
                 </a>
               </li>
               <li className="social-items">
-                <a>
+                <a href="https://instagram.com" target="_blank">
                   <img className="social-img" src={instagram} />
                 </a>
               </li>
               <li className="social-items">
-                <a>
+                <a href="https://twitter.com/" target="_blank">
                   <img className="social-img" src={twitter} />
                 </a>
               </li>
               <li className="social-items">
-                <a>
+                <a href="https://www.pinterest.com/" target="_blank">
                   <img className="social-img" src={pinterest} />
                 </a>
               </li>
               <li className="social-items">
-                <a>
+                <a href="https://www.youtube.com/" target="_blank">
                   <img className="social-img" src={youtube} />
                 </a>
               </li>
@@ -150,18 +150,45 @@ export default class ProductList extends Component {
 
             <section className="footer-info">
               <article className="footer-info-col">
-                <h5 className="footer-info-col">Products</h5>
+                <h5 className="footer-info-name">Products</h5>
+                <ul className="footer-info-list">
+                  <li><a href="#"></a>Apple</li>
+                  <li><a href="#"></a>Samsung</li>
+                  <li><a href="#"></a>Google</li>
+                  <li><a href="#"></a>LG</li>
+                </ul>
               </article>
               <article className="footer-info-col">
-                <h5 className="footer-info-col">About</h5>
+                <h5 className="footer-info-name">About</h5>
+                <ul className="footer-info-list">
+                  <li><a href="#"></a>Our Products</li>
+                  <li><a href="#"></a>Our Commitment</li>
+                  <li><a href="#"></a>Careers</li>
+                  <li><a href="#"></a>Contact Us</li>
+                  <li><a href="#"></a>FAQ</li>
+                </ul>
               </article>
               <article className="footer-info-col">
-                <h5 className="footer-info-col">Legal</h5>
+                <h5 className="footer-info-name">Legal</h5>
+                <ul className="footer-info-list">
+                  <li><a href="#"></a>Terms & Conditions</li>
+                  <li><a href="#"></a>Retailer Policy</li>
+                  <li><a href="#"></a>Privacy Policy</li>
+                  <li><a href="#"></a>Our Guarantee</li>
+                  <li><a href="#"></a>Assessibility Notice</li>
+                </ul>
               </article>
               <article className="footer-info-col">
-                <h5 className="footer-info-col">Resources</h5>
+                <h5 className="footer-info-name">Resources</h5>
+                <ul className="footer-info-list">
+                  <li><a href="#"></a>Apple</li>
+                  <li><a href="#"></a>Samsung</li>
+                  <li><a href="#"></a>Google</li>
+                  <li><a href="#"></a>LG</li>
+                </ul>
               </article>
             </section>
+            <div className="footer-hr"></div>
           </div>
         </footer>
       </React.Fragment>
