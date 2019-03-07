@@ -17,6 +17,11 @@ import shipping from "./img/shipping.png";
 import paypal from "./img/paypal.png";
 import gear from "./img/gear.png";
 import press from "./img/press.png";
+import facebook from "./img/facebook.svg";
+import instagram from "./img/instagram.svg";
+import twitter from "./img/twitter.svg";
+import pinterest from "./img/pinterest.svg";
+import youtube from "./img/youtube.svg";
 
 export default class ProductList extends Component {
   render() {
@@ -102,11 +107,46 @@ export default class ProductList extends Component {
               offers.
             </p>
             <div className="input">
-            <input class="form-control" type="text" placeholder="Email Address" aria-label="Search" />
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Email Address"
+                aria-label="Search"
+              />
               <button className="search-button">Sign up</button>
             </div>
           </div>
         </section>
+
+        <footer class="footer">
+          <ul>
+            <li>
+              <a>
+                <img src={facebook} />
+              </a>
+            </li>
+            <li>
+              <a>
+                <img src={instagram} />
+              </a>
+            </li>
+            <li>
+              <a>
+                <img src={twitter} />
+              </a>
+            </li>
+            <li>
+              <a>
+                <img src={pinterest} />
+              </a>
+            </li>
+            <li>
+              <a>
+                <img src={youtube} />
+              </a>
+            </li>
+          </ul>
+        </footer>
       </React.Fragment>
     );
   }
