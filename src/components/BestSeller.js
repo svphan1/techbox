@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
 import { CardButton } from "./css/CardButton";
+import { BestSellerTitle } from "./css/BestSellerTitle";
+import { BestSellerCard } from "./css/BestSellerCard";
+import { BestSellerName } from "./css/BestSellerName";
+import { BestSellerImage } from "./css/BestSellerImage";
 import "./css/BestSeller.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,6 +15,7 @@ import iphonexsmax from "./img/iphonexsmax.png";
 import iphonexr from "./img/iphonexr.png";
 import galaxys10 from "./img/galaxys10.png";
 import iphone7 from "./img/iphone7.png";
+import press from "./img/press.png";
 
 function NextArrow(props) {
   const { className, style, onClick } = props;
@@ -68,94 +73,63 @@ export default class Product extends Component {
       <React.Fragment>
         <BestSellerTitle className="best-seller">Best Sellers</BestSellerTitle>
         <Slider {...settings}>
-          <Card className="photo-card">
-            <Image src={note9} alt="1" />
+          <BestSellerCard className="photo-card">
+            <BestSellerImage src={note9} alt="1" />
             <hr className="phone-hr" />
-            <CardName>
+            <BestSellerName>
               Samsung <br /> Galaxy Note 9
-            </CardName>
+            </BestSellerName>
             <p>Starting at $29.89/mo. or $699</p>
             <CardButton>Learn more</CardButton>
-          </Card>
-          <Card className="photo-card">
-            <Image src={pixel3xl} alt="Pixel 3 XL" />
+          </BestSellerCard>
+          <BestSellerCard className="photo-card">
+            <BestSellerImage src={pixel3xl} alt="Pixel 3 XL" />
             <hr className="phone-hr" />
-            <CardName>
+            <BestSellerName>
               Google <br /> Pixel 3 XL
-            </CardName>
+            </BestSellerName>
             <p>Starting at $34.19/mo. or $819</p>
             <CardButton>Learn more</CardButton>
-          </Card>
-          <Card className="photo-card">
-            <Image src={iphonexsmax} alt="iPhone XS Max" />
+          </BestSellerCard>
+          <BestSellerCard className="photo-card">
+            <BestSellerImage src={iphonexsmax} alt="iPhone XS Max" />
             <hr className="phone-hr" />
-            <CardName>
+            <BestSellerName>
               Apple <br /> iPhone XS Max
-            </CardName>
+            </BestSellerName>
             <p>Starting at $41.99/mo. or $999</p>
             <CardButton>Learn more</CardButton>
-          </Card>
-          <Card className="photo-card">
-            <Image src={iphonexr} alt="iPhone XR" />
+          </BestSellerCard>
+          <BestSellerCard className="photo-card">
+            <BestSellerImage src={iphonexr} alt="iPhone XR" />
             <hr className="phone-hr" />
-            <CardName>
+            <BestSellerName>
               Apple <br /> iPhone XR
-            </CardName>
+            </BestSellerName>
+            BestSeller
             <p>Starting at $31.99/mo. or $749</p>
             <CardButton>Learn more</CardButton>
-          </Card>
-          <Card className="photo-card">
-            <Image src={galaxys10} alt="Samsung S10" />
+          </BestSellerCard>
+          <BestSellerCard className="photo-card">
+            <BestSellerImage src={galaxys10} alt="Samsung S10" />
             <hr className="phone-hr" />
-            <CardName>
+            <BestSellerName>
               Samsung <br /> Galaxy S10
-            </CardName>
+            </BestSellerName>
             <p>Starting at $34.99/mo. or $849</p>
             <CardButton>Learn more</CardButton>
-          </Card>
-          <Card className="photo-card">
-            <Image src={iphone7} alt="iPhone 7" />
+          </BestSellerCard>
+          <BestSellerCard className="photo-card">
+            <BestSellerImage src={iphone7} alt="iPhone 7" />
             <hr className="phone-hr" />
-            <CardName>
+            <BestSellerName>
               Apple <br /> iPhone X
-            </CardName>
+            </BestSellerName>
             <p>Starting at $34.99/mo. or $849</p>
             <CardButton>Learn more</CardButton>
-          </Card>
+          </BestSellerCard>
         </Slider>
       </React.Fragment>
     );
   }
 }
-
-const BestSellerTitle = styled.h3`
-  font-family: "Prompt", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 2.2rem;
-`;
-
-const Card = styled.div`
-  border: 1px solid #eee;
-  background-color: white;
-  margin-bottom: 4rem;
-  // box-shadow: 0 20px 50px rgb(0, 0, 0, .5);
-  // padding: 3rem 0 4rem 0;
-  // z-index: 1;
-  // background-color: transparent;
-`;
-
-const CardName = styled.h2`
-  font-family: Helvetica;
-  font-weight: bold;
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 0.4rem;
-`;
-
-const Image = styled.img`
-  width: 12rem;
-  height: 24rem;
-  margin: auto;
-  margin-top: 3rem;
-`;

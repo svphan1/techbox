@@ -4,6 +4,7 @@ import BestSeller from "./BestSeller";
 import { Button } from "./css/Button";
 import { Title } from "./css/Title";
 import { HomeImage } from "./css/HomeImage";
+import { BestSellerTitle } from "./css/BestSellerTitle";
 import "./css/Home.css";
 import fold from "./img/fold.png";
 import apple from "./img/applecover.png";
@@ -15,6 +16,7 @@ import unlocked from "./img/unlocked.svg";
 import shipping from "./img/shipping.png";
 import paypal from "./img/paypal.png";
 import gear from "./img/gear.png";
+import press from "./img/press.png";
 
 export default class ProductList extends Component {
   render() {
@@ -46,9 +48,9 @@ export default class ProductList extends Component {
           <img src={unlocked} className="carrier" alt="unlocked" />
         </div>
 
-        <div className="container carousel">
+        <section className="container carousel">
           <BestSeller />
-        </div>
+        </section>
 
         <hr className="home-hr" />
 
@@ -59,37 +61,57 @@ export default class ProductList extends Component {
           </h1>
         </div>
 
-        <div className="container">
-          <div className="ad-section">
+        <section className="container">
+          <div className="container">
             <div className="ad">
               <img src={shipping} className="shipping" alt="shipping" />
               <p className="ad-title">Fast and free delivery.</p>
               <p className="paragraph">
-                Pick up most items — usually within an hour — or let us know if
-                someone else is picking up for you. We can even help set up your
-                new Apple products.
+                Get free next-day delivery on any in-stock phones and free
+                two-day delivery on almost everything else. Faster options are
+                also available.
               </p>
             </div>
             <div className="ad">
               <img src={paypal} className="paypal" alt="paypal" />
               <p className="ad-title">PayPal Protection</p>
               <p className="paragraph">
-                Get free next-day delivery on any in-stock iPhone and free
-                two-day delivery on almost everything else. Faster options are
-                also available.*
+                Shop with peace of mind. We use PayPayl for payments because
+                they provide extensive buyer and seller protections. Get what
+                was advertised or get a refund!
               </p>
             </div>
             <div className="ad">
               <img src={gear} className="gear" alt="gear" />
-              <p className="ad-title">Personal</p>
+              <p className="ad-title">Personal Setup</p>
               <p className="paragraph">
-                For in-stock items in certain locations, we offer same-day
-                courier delivery for only $9. You can select this option at
-                checkout if it’s available.
+                Learn about your new phone with ease! We'll show you how to get
+                the most out of your new device, online or in store.
               </p>
             </div>
           </div>
-        </div>
+        </section>
+
+        <img className="press" src={press} alt="press" />
+
+        <section className="signup">
+          <div className="container">
+            <BestSellerTitle>Stay in touch</BestSellerTitle>
+            <p>
+              Subscribe to our newsletter for exclusive sales and special
+              offers.
+            </p>
+            <div className="input">
+              <input
+                className="input-text"
+                type="text"
+                placeholder="Email Address"
+                className="search-input"
+              />
+              <button className="search-button">Sign up</button>
+            </div>
+          </div>
+        </section>
       </React.Fragment>
     );
   }

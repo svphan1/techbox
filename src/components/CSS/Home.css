@@ -77,6 +77,12 @@ h3 {
   color: #333;
 }
 
+.paragraph {
+  width: 69%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
 .shipping {
   width: 3rem;
 }
@@ -89,4 +95,13 @@ h3 {
 
 .gear {
   width: 3rem;
+}
+
+.press {
+  width: 100%;
+}
+
+.input {
+  display: block;
+  margin: 0 auto;
 }
