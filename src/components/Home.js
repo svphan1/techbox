@@ -39,8 +39,8 @@ export default class ProductList extends Component {
         </div>
         <hr className="home-hr" />
 
-        <h4 class="compatible">Compatible phones for all carriers</h4>
-        <div class="container carriers">
+        <h4 className="compatible">Compatible phones for all carriers</h4>
+        <div className="container carriers">
           <img src={verizon} className="carrier" alt="verizon" />
           <img src={att} className="carrier" alt="att" />
           <img src={tmobile} className="carrier" alt="tmobile" />
@@ -102,12 +102,7 @@ export default class ProductList extends Component {
               offers.
             </p>
             <div className="input">
-              <input
-                className="input-text"
-                type="text"
-                placeholder="Email Address"
-                className="search-input"
-              />
+            <input class="form-control" type="text" placeholder="Email Address" aria-label="Search" />
               <button className="search-button">Sign up</button>
             </div>
           </div>
