@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const List = styled.li`
+export const NavList = styled.li`
   display: inline-block;
   position: relative;
   opacity: 0.75;

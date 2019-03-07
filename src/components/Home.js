@@ -5,6 +5,7 @@ import { Button } from "./css/Button";
 import { Title } from "./css/Title";
 import { HomeImage } from "./css/HomeImage";
 import { BestSellerTitle } from "./css/BestSellerTitle";
+import { FooterList } from "./css/FooterList";
 import "./css/Home.css";
 import fold from "./img/fold.png";
 import apple from "./img/applecover.png";
@@ -119,7 +120,7 @@ export default class ProductList extends Component {
         </section>
 
         <footer class="footer">
-          <div className="container">
+          <div className="container foot">
             <ul className="social">
               <li className="social-items">
                 <a href="https://www.facebook.com/" target="_blank">
@@ -150,45 +151,50 @@ export default class ProductList extends Component {
 
             <section className="footer-info">
               <article className="footer-info-col">
+              <hr className="footer-hr"></hr>
                 <h5 className="footer-info-name">Products</h5>
                 <ul className="footer-info-list">
-                  <li><a href="#"></a>Apple</li>
-                  <li><a href="#"></a>Samsung</li>
-                  <li><a href="#"></a>Google</li>
-                  <li><a href="#"></a>LG</li>
+                  <FooterList><a href="#"></a>Apple</FooterList>
+                  <FooterList><a href="#"></a>Samsung</FooterList>
+                  <FooterList><a href="#"></a>Google</FooterList>
+                  <FooterList><a href="#"></a>LG</FooterList>
                 </ul>
               </article>
               <article className="footer-info-col">
+              <hr className="footer-hr"></hr>
                 <h5 className="footer-info-name">About</h5>
                 <ul className="footer-info-list">
-                  <li><a href="#"></a>Our Products</li>
-                  <li><a href="#"></a>Our Commitment</li>
-                  <li><a href="#"></a>Careers</li>
-                  <li><a href="#"></a>Contact Us</li>
-                  <li><a href="#"></a>FAQ</li>
+                  <FooterList><a href="#"></a>Our Products</FooterList>
+                  <FooterList><a href="#"></a>Our Commitment</FooterList>
+                  <FooterList><a href="#"></a>Careers</FooterList>
+                  <FooterList><a href="#"></a>Contact Us</FooterList>
+                  <FooterList><a href="#"></a>FAQ</FooterList>
                 </ul>
               </article>
               <article className="footer-info-col">
+              <hr className="footer-hr"></hr>
                 <h5 className="footer-info-name">Legal</h5>
                 <ul className="footer-info-list">
-                  <li><a href="#"></a>Terms & Conditions</li>
-                  <li><a href="#"></a>Retailer Policy</li>
-                  <li><a href="#"></a>Privacy Policy</li>
-                  <li><a href="#"></a>Our Guarantee</li>
-                  <li><a href="#"></a>Assessibility Notice</li>
+                  <FooterList><a href="#"></a>Terms & Conditions</FooterList>
+                  <FooterList><a href="#"></a>Retailer Policy</FooterList>
+                  <FooterList><a href="#"></a>Privacy Policy</FooterList>
+                  <FooterList><a href="#"></a>Our Guarantee</FooterList>
+                  <FooterList><a href="#"></a>Assessibility Notice</FooterList>
                 </ul>
               </article>
               <article className="footer-info-col">
+              <hr className="footer-hr"></hr>
                 <h5 className="footer-info-name">Resources</h5>
                 <ul className="footer-info-list">
-                  <li><a href="#"></a>Apple</li>
-                  <li><a href="#"></a>Samsung</li>
-                  <li><a href="#"></a>Google</li>
-                  <li><a href="#"></a>LG</li>
+                  <FooterList><a href="#"></a>Apple</FooterList>
+                  <FooterList><a href="#"></a>Samsung</FooterList>
+                  <FooterList><a href="#"></a>Google</FooterList>
+                  <FooterList><a href="#"></a>LG</FooterList>
                 </ul>
               </article>
             </section>
-            <div className="footer-hr"></div>
+            <hr className="footer-hr"></hr>
+            <p className="copyright">©Copyright 2019 Techbox </p>
           </div>
         </footer>
       </React.Fragment>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "./img/box.png";
 import styled from "styled-components";
 import { NavButton } from "./css/NavButton";
-import { List } from "./css/List";
+import { NavList } from "./css/NavList";
 
 export default class NavBar extends Component {
   render() {
@@ -18,31 +18,31 @@ export default class NavBar extends Component {
         </Link>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav align-items-center">
-            <List className="nav-item ml-5">
+            <NavList className="nav-item ml-5">
               <Link to="/" className="nav-link">
                 Home
               </Link>
-            </List>
-            <List className="nav-item ml-5">
+            </NavList>
+            <NavList className="nav-item ml-5">
               <Link to="/iphone" className="nav-link">
                 Apple
               </Link>
-            </List>
-            <List className="nav-item ml-5">
+            </NavList>
+            <NavList className="nav-item ml-5">
               <Link to="/samsung" className="nav-link">
                 Samsung
               </Link>
-            </List>
-            <List className="nav-item ml-5">
+            </NavList>
+            <NavList className="nav-item ml-5">
               <Link to="/google" className="nav-link">
                 Google
               </Link>
-            </List>
-            <List className="nav-item ml-5">
+            </NavList>
+            <NavList className="nav-item ml-5">
               <Link to="/lg" className="nav-link">
                 LG
               </Link>
-            </List>
+            </NavList>
           </ul>
         </div>
 

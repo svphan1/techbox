@@ -10,7 +10,6 @@
 body {
   font-family: 'Montserrat', sans-serif !important;
   background: var(--mainWhite) !important;
-  /* background: black !important; */
   color: var(--mainDark) !important;
   width: 100%;
   height: 100%;
