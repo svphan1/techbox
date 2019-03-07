@@ -138,13 +138,17 @@ h3 {
 
 .footer {
   background-color: rgb(32, 34, 35);
+  padding-top: 5rem;
 }
 
 .social {
-  display: inline-block;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  list-style-type: none;
 }
 
-.social-items {
-  width: 1rem;
-  list-style-type: none;
+.social-img {
+  width: 2rem;
+  margin-right: 2rem;
 }

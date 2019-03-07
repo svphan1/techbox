@@ -119,33 +119,50 @@ export default class ProductList extends Component {
         </section>
 
         <footer class="footer">
-          <ul className="social">
-            <li className="social-items">
-              <a>
-                <img src={facebook} />
-              </a>
-            </li>
-            <li className="social-items">
-              <a>
-                <img src={instagram} />
-              </a>
-            </li>
-            <li className="social-items">
-              <a>
-                <img src={twitter} />
-              </a>
-            </li>
-            <li className="social-items">
-              <a>
-                <img src={pinterest} />
-              </a>
-            </li>
-            <li className="social-items">
-              <a>
-                <img src={youtube} />
-              </a>
-            </li>
-          </ul>
+          <div className="container">
+            <ul className="social">
+              <li className="social-items">
+                <a href="#">
+                  <img className="social-img" src={facebook} />
+                </a>
+              </li>
+              <li className="social-items">
+                <a>
+                  <img className="social-img" src={instagram} />
+                </a>
+              </li>
+              <li className="social-items">
+                <a>
+                  <img className="social-img" src={twitter} />
+                </a>
+              </li>
+              <li className="social-items">
+                <a>
+                  <img className="social-img" src={pinterest} />
+                </a>
+              </li>
+              <li className="social-items">
+                <a>
+                  <img className="social-img" src={youtube} />
+                </a>
+              </li>
+            </ul>
+
+            <section className="footer-info">
+              <article className="footer-info-col">
+                <h5 className="footer-info-col">Products</h5>
+              </article>
+              <article className="footer-info-col">
+                <h5 className="footer-info-col">About</h5>
+              </article>
+              <article className="footer-info-col">
+                <h5 className="footer-info-col">Legal</h5>
+              </article>
+              <article className="footer-info-col">
+                <h5 className="footer-info-col">Resources</h5>
+              </article>
+            </section>
+          </div>
         </footer>
       </React.Fragment>
     );
