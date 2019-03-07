@@ -61,7 +61,7 @@ export default class ProductList extends Component {
         <hr className="home-hr" />
 
         <div>
-          <img src={apple} alt="apple" width="100%" />
+          <img className="apple" src={apple} alt="apple" width="100%" />
           <h1 class="caption">
             Get the products you want, <br /> the way you want it.
           </h1>

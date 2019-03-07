@@ -35,6 +35,7 @@ h3 {
 .compatible {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
+  color: #333;
   text-align: center;
   margin: 2rem 0 2rem 0;
 }
