@@ -135,3 +135,16 @@ h3 {
 .search-button:focus {
   outline: 0;
 }
+
+.footer {
+  background-color: rgb(32, 34, 35);
+}
+
+.social {
+  display: inline-block;
+}
+
+.social-items {
+  width: 1rem;
+  list-style-type: none;
+}

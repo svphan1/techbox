@@ -17,11 +17,11 @@ import shipping from "./img/shipping.png";
 import paypal from "./img/paypal.png";
 import gear from "./img/gear.png";
 import press from "./img/press.png";
-import facebook from "./img/facebook.svg";
-import instagram from "./img/instagram.svg";
-import twitter from "./img/twitter.svg";
-import pinterest from "./img/pinterest.svg";
-import youtube from "./img/youtube.svg";
+import facebook from "./img/facebook.png";
+import instagram from "./img/instagram.png";
+import twitter from "./img/twitter.png";
+import pinterest from "./img/pinterest.png";
+import youtube from "./img/youtube.png";
 
 export default class ProductList extends Component {
   render() {
@@ -119,28 +119,28 @@ export default class ProductList extends Component {
         </section>
 
         <footer class="footer">
-          <ul>
-            <li>
+          <ul className="social">
+            <li className="social-items">
               <a>
                 <img src={facebook} />
               </a>
             </li>
-            <li>
+            <li className="social-items">
               <a>
                 <img src={instagram} />
               </a>
             </li>
-            <li>
+            <li className="social-items">
               <a>
                 <img src={twitter} />
               </a>
             </li>
-            <li>
+            <li className="social-items">
               <a>
                 <img src={pinterest} />
               </a>
             </li>
-            <li>
+            <li className="social-items">
               <a>
                 <img src={youtube} />
               </a>
