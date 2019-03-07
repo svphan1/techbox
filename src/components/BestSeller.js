@@ -106,7 +106,6 @@ export default class Product extends Component {
             <BestSellerName>
               Apple <br /> iPhone XR
             </BestSellerName>
-            BestSeller
             <p>Starting at $31.99/mo. or $749</p>
             <CardButton>Learn more</CardButton>
           </BestSellerCard>
