@@ -62,7 +62,7 @@ export default class ProductList extends Component {
 
         <div>
           <img className="apple" src={apple} alt="apple" width="100%" />
-          <h1 class="caption">
+          <h1 className="caption">
             Get the products you want, <br /> the way you want it.
           </h1>
         </div>
@@ -109,7 +109,7 @@ export default class ProductList extends Component {
             </p>
             <div className="input">
               <input
-                class="form-control"
+                className="form-control"
                 type="text"
                 placeholder="Email Address"
                 aria-label="Search"
@@ -119,32 +119,32 @@ export default class ProductList extends Component {
           </div>
         </section>
 
-        <footer class="footer">
+        <footer className="footer">
           <div className="container foot">
             <ul className="social">
               <li className="social-items">
-                <a href="https://www.facebook.com/" target="_blank">
-                  <img className="social-img" src={facebook} />
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                  <img className="social-img" src={facebook} alt="facebook img"/>
                 </a>
               </li>
               <li className="social-items">
-                <a href="https://instagram.com" target="_blank">
-                  <img className="social-img" src={instagram} />
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <img className="social-img" src={instagram} alt="instagram img"/>
                 </a>
               </li>
               <li className="social-items">
-                <a href="https://twitter.com/" target="_blank">
-                  <img className="social-img" src={twitter} />
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                  <img className="social-img" src={twitter} alt="twitter img"/>
                 </a>
               </li>
               <li className="social-items">
-                <a href="https://www.pinterest.com/" target="_blank">
-                  <img className="social-img" src={pinterest} />
+                <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
+                  <img className="social-img" src={pinterest} alt="pinterest img"/>
                 </a>
               </li>
               <li className="social-items">
-                <a href="https://www.youtube.com/" target="_blank">
-                  <img className="social-img" src={youtube} />
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                  <img className="social-img" src={youtube} alt="youtube img"/>
                 </a>
               </li>
             </ul>
@@ -154,42 +154,43 @@ export default class ProductList extends Component {
               <hr className="footer-hr"></hr>
                 <h5 className="footer-info-name">Products</h5>
                 <ul className="footer-info-list">
-                  <FooterList><a href="#"></a>Apple</FooterList>
-                  <FooterList><a href="#"></a>Samsung</FooterList>
-                  <FooterList><a href="#"></a>Google</FooterList>
-                  <FooterList><a href="#"></a>LG</FooterList>
+                  <FooterList>Apple</FooterList>
+                  <FooterList>Samsung</FooterList>
+                  <FooterList>Google</FooterList>
+                  <FooterList>LG</FooterList>
                 </ul>
               </article>
               <article className="footer-info-col">
               <hr className="footer-hr"></hr>
                 <h5 className="footer-info-name">About</h5>
                 <ul className="footer-info-list">
-                  <FooterList><a href="#"></a>Our Products</FooterList>
-                  <FooterList><a href="#"></a>Our Commitment</FooterList>
-                  <FooterList><a href="#"></a>Careers</FooterList>
-                  <FooterList><a href="#"></a>Contact Us</FooterList>
-                  <FooterList><a href="#"></a>FAQ</FooterList>
+                  <FooterList>Our Products</FooterList>
+                  <FooterList>Our Commitment</FooterList>
+                  <FooterList>Careers</FooterList>
+                  <FooterList>Contact Us</FooterList>
+                  <FooterList>FAQ</FooterList>
                 </ul>
               </article>
               <article className="footer-info-col">
               <hr className="footer-hr"></hr>
                 <h5 className="footer-info-name">Legal</h5>
                 <ul className="footer-info-list">
-                  <FooterList><a href="#"></a>Terms & Conditions</FooterList>
-                  <FooterList><a href="#"></a>Retailer Policy</FooterList>
-                  <FooterList><a href="#"></a>Privacy Policy</FooterList>
-                  <FooterList><a href="#"></a>Our Guarantee</FooterList>
-                  <FooterList><a href="#"></a>Assessibility Notice</FooterList>
+                  <FooterList>Terms & Conditions</FooterList>
+                  <FooterList>Retailer Policy</FooterList>
+                  <FooterList>Privacy Policy</FooterList>
+                  <FooterList>Our Guarantee</FooterList>
+                  <FooterList>Assessibility Notice</FooterList>
                 </ul>
               </article>
               <article className="footer-info-col">
               <hr className="footer-hr"></hr>
                 <h5 className="footer-info-name">Resources</h5>
                 <ul className="footer-info-list">
-                  <FooterList><a href="#"></a>Apple</FooterList>
-                  <FooterList><a href="#"></a>Samsung</FooterList>
-                  <FooterList><a href="#"></a>Google</FooterList>
-                  <FooterList><a href="#"></a>LG</FooterList>
+                  <FooterList>My Account</FooterList>
+                  <FooterList>Techbox Rewards</FooterList>
+                  <FooterList>Blog</FooterList>
+                  <FooterList>Newsletter</FooterList>
+                  <FooterList>Digital Resources</FooterList>
                 </ul>
               </article>
             </section>

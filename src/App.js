@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ProductList from "./components/ProductList";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Details from "./components/Details";
@@ -19,6 +20,7 @@ class App extends Component {
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/productlist" component={ProductList} />
           <Route path="/iphone" component={IPhone} />
           <Route path="/samsung" component={Samsung} />
           <Route path="/google" component={Google} />

@@ -15,7 +15,6 @@ import iphonexsmax from "./img/iphonexsmax.png";
 import iphonexr from "./img/iphonexr.png";
 import galaxys10 from "./img/galaxys10.png";
 import iphone7 from "./img/iphone7.png";
-import press from "./img/press.png";
 
 function NextArrow(props) {
   const { className, style, onClick } = props;
