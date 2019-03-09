@@ -5,5 +5,5 @@ export const BestSellerTitle = styled.h3`
   color: #333;
   font-weight: bold;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2rem;
 `;

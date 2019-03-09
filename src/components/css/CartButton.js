@@ -10,7 +10,7 @@ export const CartButton = styled.button`
   border: 0.15rem solid rgb(87, 52, 140);
   cursor: pointer;
   border-radius: 3rem;
-  transform: translate(0, 80px);
+  transform: translate(0, 8rem);
   transition: all 0.2s ease-out;
   padding: 0.1rem 0.8rem;
     &:focus {

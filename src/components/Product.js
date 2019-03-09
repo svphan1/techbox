@@ -18,13 +18,16 @@ export default class Product extends Component {
             onClick={() => console.log("clicked")}
           >
             <img src={img} alt="product" className="card-img-top" />
-            <hr className="product-hr" />
-            <PhoneName>
-              {company} <br /> {title} <h6>${price}</h6>
-            </PhoneName>
+
+            <div className="img-footer">
+              <hr className="product-hr" />
+              <PhoneName>
+                {company} <br /> {title} <h6>${price}</h6>
+              </PhoneName>
+            </div>
 
             <div className="buttons">
-              <Link to="/details">
+              <Link to="/details" style={{ textDecoration: 'none' }}>
                 <CartButton className="product-btn">Details</CartButton>
               </Link>
               <CartButton

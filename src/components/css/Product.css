@@ -1,12 +1,12 @@
 .product-hr {
   width: 100%;
   border: none;
-  height: 4px;
+  height: 3px;
   background-color: black;
 }
 
 .card-img-top {
-  height: 20rem;
+  height: 23rem;
   transition: all .2s linear;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .p-5 {
-  padding: 3rem !important;
+  padding: 2rem !important;
 }
 
 .img-container:hover {
@@ -30,7 +30,26 @@
 
 .img-container:hover .product-btn {
   transform: translate(0, 0);
-  animation: moveInBottom 0.4s ease-out;
+  animation: moveInBottom 0.3s ease-out;
+}
+
+.img-footer {
+  margin-top: 1.5rem;
+  transform: translate(0, 1rem);
+  transition: all 0.1s ease-in-out;
+}
+
+.img-container:hover .img-footer {
+  transform: translate(0, 0);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-title {
+  margin-bottom: -4rem;
 }
 
 @keyframes moveInBottom {
@@ -44,16 +63,5 @@
     transform: translate(0);
   }
 }
-/* .cart-btn {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 0.2rem 0.4rem;
-  font-size: 1.4rem;
-} */
 
-.buttons {
-  display: flex;
-  justify-content: space-between;
-}
 
