@@ -28,13 +28,32 @@
    transform: scale(1.02);
 }
 
+.img-container:hover .product-btn {
+  transform: translate(0, 0);
+  animation: moveInBottom 0.4s ease-out;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+/* .cart-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.2rem 0.4rem;
+  font-size: 1.4rem;
+} */
+
 .buttons {
   display: flex;
   justify-content: space-between;
 }
 
-/* .cart-btn {
-  color: white;
-  background-color: rgb(87, 52, 140);
-  border: 0.15rem solid rgb(87, 52, 140);
-} */

@@ -25,10 +25,10 @@ export default class Product extends Component {
 
             <div className="buttons">
               <Link to="/details">
-                <CartButton>Details</CartButton>
+                <CartButton className="product-btn">Details</CartButton>
               </Link>
               <CartButton
-                // className="cart-btn"
+                className="product-btn"
                 disabled={inCart ? true : false}
                 onClick={() => {
                   console.log("added to cart");
