@@ -1,7 +1,5 @@
 .product-hr {
   width: 100%;
-  /* margin: auto; */
-  /* margin-top: 2rem; */
   border: none;
   height: 4px;
   background-color: black;
@@ -9,4 +7,34 @@
 
 .card-img-top {
   height: 20rem;
+  transition: all .2s linear;
 }
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(250,250,250);
+}
+
+.p-5 {
+  padding: 3rem !important;
+}
+
+.img-container:hover {
+  background-color: white;  
+}
+
+.img-container:hover .card-img-top{
+   transform: scale(1.02);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .cart-btn {
+  color: white;
+  background-color: rgb(87, 52, 140);
+  border: 0.15rem solid rgb(87, 52, 140);
+} */
