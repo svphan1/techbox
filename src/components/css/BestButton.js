@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import "../../App.css";
 
-export const CardButton = styled.button`
+export const BestButton = styled.button`
   font-size: .8rem;
   font-weight: bold;
   color: white;
   background-color: rgb(87, 52, 140);
   display: flex;
-  margin: 1rem auto;
+  margin: 0 auto;
+  margin-bottom: 2rem;
   border: 0.15rem solid rgb(87, 52, 140);
   cursor: pointer;
   border-radius: 3rem;

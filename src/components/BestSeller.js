@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
-import { CardButton } from "./css/CardButton";
+import { BestButton } from "./css/BestButton";
 import { BestSellerTitle } from "./css/BestSellerTitle";
 import { BestSellerCard } from "./css/BestSellerCard";
 import { BestSellerName } from "./css/BestSellerName";
@@ -79,7 +79,7 @@ export default class Product extends Component {
               Samsung <br /> Galaxy Note 9
             </BestSellerName>
             <p>Starting at $29.89/mo. or $699</p>
-            <CardButton>Learn more</CardButton>
+            <BestButton>Learn more</BestButton>
           </BestSellerCard>
           <BestSellerCard className="photo-card">
             <BestSellerImage src={pixel3xl} alt="Pixel 3 XL" />
@@ -88,7 +88,7 @@ export default class Product extends Component {
               Google <br /> Pixel 3 XL
             </BestSellerName>
             <p>Starting at $34.19/mo. or $819</p>
-            <CardButton>Learn more</CardButton>
+            <BestButton>Learn more</BestButton>
           </BestSellerCard>
           <BestSellerCard className="photo-card">
             <BestSellerImage src={iphonexsmax} alt="iPhone XS Max" />
@@ -97,7 +97,7 @@ export default class Product extends Component {
               Apple <br /> iPhone XS Max
             </BestSellerName>
             <p>Starting at $41.99/mo. or $999</p>
-            <CardButton>Learn more</CardButton>
+            <BestButton>Learn more</BestButton>
           </BestSellerCard>
           <BestSellerCard className="photo-card">
             <BestSellerImage src={iphonexr} alt="iPhone XR" />
@@ -106,7 +106,7 @@ export default class Product extends Component {
               Apple <br /> iPhone XR
             </BestSellerName>
             <p>Starting at $31.99/mo. or $749</p>
-            <CardButton>Learn more</CardButton>
+            <BestButton>Learn more</BestButton>
           </BestSellerCard>
           <BestSellerCard className="photo-card">
             <BestSellerImage src={galaxys10} alt="Samsung S10" />
@@ -115,7 +115,7 @@ export default class Product extends Component {
               Samsung <br /> Galaxy S10
             </BestSellerName>
             <p>Starting at $34.99/mo. or $849</p>
-            <CardButton>Learn more</CardButton>
+            <BestButton>Learn more</BestButton>
           </BestSellerCard>
           <BestSellerCard className="photo-card">
             <BestSellerImage src={iphone7} alt="iPhone 7" />
@@ -124,7 +124,7 @@ export default class Product extends Component {
               Apple <br /> iPhone X
             </BestSellerName>
             <p>Starting at $34.99/mo. or $849</p>
-            <CardButton>Learn more</CardButton>
+            <BestButton>Learn more</BestButton>
           </BestSellerCard>
         </Slider>
       </React.Fragment>

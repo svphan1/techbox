@@ -1,0 +1,12 @@
+.product-hr {
+  width: 100%;
+  /* margin: auto; */
+  /* margin-top: 2rem; */
+  border: none;
+  height: 4px;
+  background-color: black;
+}
+
+.card-img-top {
+  height: 20rem;
+}

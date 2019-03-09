@@ -10,17 +10,18 @@ export default class NavBar extends Component {
     return (
       <Nav className="navbar navbar-expand-lg navbar-dark px-sm-5">
         <Link to="/">
-          <Image
-            src={logo}
-            atl="store"
-            className="navbar-brand"
-          />
+          <Image src={logo} atl="store" className="navbar-brand" />
         </Link>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav align-items-center">
             <NavList className="nav-item ml-5">
               <Link to="/" className="nav-link">
                 Home
+              </Link>
+            </NavList>
+            <NavList className="nav-item ml-5">
+              <Link to="/productlist" className="nav-link">
+                All Products
               </Link>
             </NavList>
             <NavList className="nav-item ml-5">
@@ -48,13 +49,13 @@ export default class NavBar extends Component {
 
         <span className="ml-auto">
           <NavButton>
-            <I className="fas fa-search"/>
+            <I className="fas fa-search" />
           </NavButton>
         </span>
         <Link to="/cart" className="ml-4">
           <NavButton>
             <span className="mr-2">
-              <I className="fas fa-shopping-cart cart"/>
+              <I className="fas fa-shopping-cart cart" />
             </span>
           </NavButton>
         </Link>
@@ -75,13 +76,13 @@ export default class NavBar extends Component {
 }
 
 const Image = styled.img`
-  width: 2.3rem
+  width: 2.3rem;
 `;
 
 const I = styled.i`
-  color: white
+  color: white;
 `;
 
 const Nav = styled.nav`
-  background-color: var(--mainDark)
+  background-color: var(--mainDark);
 `;
