@@ -22,7 +22,7 @@ export default class Google extends Component {
             <div className="img-footer">
               <hr className="product-hr" />
               <PhoneName>
-                {company} <br /> {title} <h6>${price}</h6>
+                {company} <br /> {title} <p>${price}</p>
               </PhoneName>
             </div>
 

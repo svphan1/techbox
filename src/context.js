@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { allProducts, detailProduct } from "./data/data";
 import { appleProducts } from "./data/appledata";
 import { samsungProducts } from "./data/samsungdata";
@@ -11,32 +11,49 @@ const ProductContext = React.createContext();
 
 class ProductProvider extends Component {
   state = {
-    allProducts: allProducts,
+    products: [],
     appleProducts: appleProducts,
     samsungProducts: samsungProducts,
     googleProducts: googleProducts,
     lgProducts: lgProducts,
     detailProduct: detailProduct
+  };
+
+  componentDidMount() {
+    this.setProducts();
   }
+
+  setProducts = () => {
+    let tempProducts = [];
+    allProducts.forEach(item => {
+      const singleItem = { ...item };
+      tempProducts = [...tempProducts, singleItem];
+    });
+    this.setState(() => {
+      return { products: tempProducts };
+    });
+  };
 
   handleDetail = () => {
-    console.log('hello from detail');
-  }
+    console.log("hello from detail");
+  };
 
   addToCart = () => {
-    console.log('hello from add to cart');
-  }
+    console.log("hello from add to cart");
+  };
 
   render() {
     return (
-      <ProductContext.Provider value={{
-        ...this.state, 
-        handleDetail: this.handleDetail,
-        addToCart: this.addToCart
-      }}>
+      <ProductContext.Provider
+        value={{
+          ...this.state,
+          handleDetail: this.handleDetail,
+          addToCart: this.addToCart
+        }}
+      >
         {this.props.children}
       </ProductContext.Provider>
-    )
+    );
   }
 }
 

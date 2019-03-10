@@ -78,7 +78,7 @@ export default class Product extends Component {
             <BestSellerName>
               Samsung <br /> Galaxy Note 9
             </BestSellerName>
-            <p>Starting at $29.89/mo. or $699</p>
+            <p className="price">Starting at $29.89/mo. or $699</p>
             <BestButton>Learn more</BestButton>
           </BestSellerCard>
           <BestSellerCard className="photo-card">
@@ -87,7 +87,7 @@ export default class Product extends Component {
             <BestSellerName>
               Google <br /> Pixel 3 XL
             </BestSellerName>
-            <p>Starting at $34.19/mo. or $819</p>
+            <p className="price">Starting at $34.19/mo. or $819</p>
             <BestButton>Learn more./../public</BestButton>
           </BestSellerCard>
           <BestSellerCard className="photo-card">
@@ -96,7 +96,7 @@ export default class Product extends Component {
             <BestSellerName>
               Apple <br /> iPhone XS Max
             </BestSellerName>
-            <p>Starting at $41.99/mo. or $999</p>
+            <p className="price">Starting at $41.99/mo. or $999</p>
             <BestButton>Learn more</BestButton>
           </BestSellerCard>
           <BestSellerCard className="photo-card">
@@ -105,7 +105,7 @@ export default class Product extends Component {
             <BestSellerName>
               Apple <br /> iPhone XR
             </BestSellerName>
-            <p>Starting at $31.99/mo. or $749</p>
+            <p className="price">Starting at $31.99/mo. or $749</p>
             <BestButton>Learn more</BestButton>
           </BestSellerCard>
           <BestSellerCard className="photo-card">
@@ -114,7 +114,7 @@ export default class Product extends Component {
             <BestSellerName>
               Samsung <br /> Galaxy S10
             </BestSellerName>
-            <p>Starting at $34.99/mo. or $849</p>
+            <p className="price">Starting at $34.99/mo. or $849</p>
             <BestButton>Learn more</BestButton>
           </BestSellerCard>
           <BestSellerCard className="photo-card">
@@ -123,7 +123,7 @@ export default class Product extends Component {
             <BestSellerName>
               Apple <br /> iPhone X
             </BestSellerName>
-            <p>Starting at $34.99/mo. or $849</p>
+            <p className="price">Starting at $34.99/mo. or $849</p>
             <BestButton>Learn more</BestButton>
           </BestSellerCard>
         </Slider>
