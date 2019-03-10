@@ -17,7 +17,9 @@ class ProductProvider extends Component {
     googleProducts: googleProducts,
     lgProducts: lgProducts,
     detailProduct: detailProduct,
-    cart: []
+    cart: [],
+    modalOpen: true,
+    modalProduct: detailProduct,
   };
 
   componentDidMount() {
@@ -65,6 +67,19 @@ class ProductProvider extends Component {
     this.setState(() => {
       return { products: tempProducts, cart:[...this.state.cart, product] };
     }, () => {console.log(this.state)})
+  };
+
+  openModal = id => {
+    const product = this.getAllItem(id);
+    this.setState(() => {
+      return { modalProduct: product, modalOpen: true }
+    })
+  };
+
+  closeModal = () => {
+    this.setState(() => {
+      return { modalOpen: false }
+    })
   };
 
   // Set copy & method for appleProducts
@@ -190,6 +205,8 @@ class ProductProvider extends Component {
           ...this.state,
           handleDetail: this.handleDetail,
           addToCart: this.addToCart,
+          openModal: this.openModal,
+          closeModal: this.closeModal,
           handleAppleDetail: this.handleAppleDetail,
           handleSamsungDetail: this.handleSamsungDetail,
           handleGoogleDetail: this.handleGoogleDetail,

@@ -12,6 +12,7 @@ import Home from "./components/Home";
 import Details from "./components/Details";
 import Cart from "./components/Cart";
 import NotFound from "./components/NotFound";
+import Modal from "./components/Modal"
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
           <Route path="/cart" component={Cart} />
           <Route component={NotFound} />
         </Switch>
+        <Modal/>
       </React.Fragment>
     );
   }

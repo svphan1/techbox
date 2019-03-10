@@ -69,8 +69,12 @@
   margin-top: -3rem;
 }
 
-.img-fluid {
+.details-img {
   margin-left: 25%;
+}
+
+.modal-img {
+  width: 7rem;
 }
 
 
