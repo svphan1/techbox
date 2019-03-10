@@ -2,7 +2,7 @@
   width: 50% !important;
 }
 
-.title {
+.center {
   text-align: center;
 }
 
@@ -185,6 +185,7 @@
 }
 
 .copyright {
+  text-align: center;
   color: white;
   font-size: 0.75rem;
 }

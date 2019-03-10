@@ -16,7 +16,8 @@ class ProductProvider extends Component {
     samsungProducts: [],
     googleProducts: googleProducts,
     lgProducts: lgProducts,
-    detailProduct: detailProduct
+    detailProduct: detailProduct,
+    cart: []
   };
 
   componentDidMount() {
@@ -54,7 +55,16 @@ class ProductProvider extends Component {
 
   addToCart = id => {
     let tempProducts = [...this.state.products];
-    const index = tempProducts.indexOf()
+    const index = tempProducts.indexOf(this.getAllItem(id))
+    const product = tempProducts[index];
+    product.inCart = true;
+    product.count = 1;
+    const price = product.price;
+    product.total = price;
+
+    this.setState(() => {
+      return { products: tempProducts, cart:[...this.state.cart, product] };
+    }, () => {console.log(this.state)})
   };
 
   // Set copy & method for appleProducts
@@ -82,7 +92,7 @@ class ProductProvider extends Component {
     });
   };
 
-  addToCart = id => {
+  addAppleToCart = id => {
     console.log(`hello from add to cart.id is ${id}`);
   };
 
@@ -111,7 +121,7 @@ class ProductProvider extends Component {
     });
   };
 
-  addToCart = id => {
+  addSamsungToCart = id => {
     console.log(`hello from add to cart.id is ${id}`);
   };
 
@@ -140,7 +150,7 @@ class ProductProvider extends Component {
     });
   };
 
-  addToCart = id => {
+  addGoogleToCart = id => {
     console.log(`hello from add to cart.id is ${id}`);
   };
 
@@ -169,7 +179,7 @@ class ProductProvider extends Component {
     });
   };
 
-  addToCart = id => {
+  addLGToCart = id => {
     console.log(`hello from add to cart.id is ${id}`);
   };
 
@@ -179,11 +189,11 @@ class ProductProvider extends Component {
         value={{
           ...this.state,
           handleDetail: this.handleDetail,
+          addToCart: this.addToCart,
           handleAppleDetail: this.handleAppleDetail,
           handleSamsungDetail: this.handleSamsungDetail,
           handleGoogleDetail: this.handleGoogleDetail,
-          handleLGDetail: this.handleLGDetail,
-          addToCart: this.addToCart
+          handleLGDetail: this.handleLGDetail
         }}
       >
         {this.props.children}

@@ -103,7 +103,7 @@ export default class ProductList extends Component {
         <section className="signup">
           <div className="container">
             <BestSellerTitle>Stay in touch</BestSellerTitle>
-            <p>
+            <p className="center">
               Subscribe to our newsletter for exclusive sales and special
               offers.
             </p>
