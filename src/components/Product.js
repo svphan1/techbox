@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import "./css/Product.css";
 import { Link } from "react-router-dom";
-import { CardButton } from "./css/CardButton";
 import { CartButton } from "./css/CartButton";
 import { PhoneName } from "./css/PhoneName";
 import { ProductConsumer } from "../context";
@@ -27,7 +26,7 @@ export default class Product extends Component {
             </div>
 
             <div className="buttons">
-              <Link to="/details" style={{ textDecoration: 'none' }}>
+              <Link to="/details" style={{ textDecoration: "none" }}>
                 <CartButton className="product-btn">Details</CartButton>
               </Link>
               <CartButton

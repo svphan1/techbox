@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { allProducts, detailProduct } from "./data/data";
 import { appleProducts } from "./data/appledata";
 import { samsungProducts } from "./data/samsungdata";
+import { googleProducts } from "./data/googledata";
+import { lgProducts } from "./data/lgdata";
 
 const ProductContext = React.createContext();
 //Provider
@@ -12,6 +14,8 @@ class ProductProvider extends Component {
     allProducts: allProducts,
     appleProducts: appleProducts,
     samsungProducts: samsungProducts,
+    googleProducts: googleProducts,
+    lgProducts: lgProducts,
     detailProduct: detailProduct
   }
 
