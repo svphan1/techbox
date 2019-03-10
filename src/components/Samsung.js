@@ -17,8 +17,9 @@ export default class Samsung extends Component {
             className="img-container p-5"
             onClick={() => console.log("clicked")}
           >
-            <img src={img} alt="product" className="card-img-top" />
-
+            <Link to="/details">
+              <img src={img} alt="product" className="card-img-top" />
+            </Link>
             <div className="img-footer">
               <hr className="product-hr" />
               <PhoneName>

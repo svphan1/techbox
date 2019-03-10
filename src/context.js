@@ -34,13 +34,13 @@ class ProductProvider extends Component {
     });
   };
 
-  getItem = (id) => {
+  getAllItem = (id) => {
     const product = this.state.products.find(item => item.id === id)
     return product;
   }
 
   handleDetail = (id) => {
-    const product = this.getItem(id);
+    const product = this.getAllItem(id);
     this.setState(() => {
       return {detailProduct: product}
     })
