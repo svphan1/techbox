@@ -25,7 +25,7 @@ export default class NavBar extends Component {
               </Link>
             </NavList>
             <NavList className="nav-item ml-5">
-              <Link to="/iphone" className="nav-link">
+              <Link to="/apple" className="nav-link">
                 Apple
               </Link>
             </NavList>

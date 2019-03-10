@@ -1,23 +1,23 @@
 import React, { Component } from "react";
-import Product from "./Product";
+import Samsung from "./Samsung";
 import { Title } from "./css/Title";
 import "./css/Product.css";
 import { BestSellerTitle } from "./css/BestSellerTitle";
 import { ProductConsumer } from "../context";
 
-export default class ProductList extends Component {
+export default class SamsungList extends Component {
   render() {
     return (
       <React.Fragment>
-        <BestSellerTitle className="list-title">All Smartphones</BestSellerTitle>
+        <BestSellerTitle className="list-title">Samsung</BestSellerTitle>
         <div className="pad-5">
           <div className="container">
             <Title name="our" title="products" />
             <div className="row">
               <ProductConsumer>
                 {value => {
-                  return value.allProducts.map(product => {
-                    return <Product key={product.id} product={product} />;
+                  return value.samsungProducts.map(product => {
+                    return <Samsung key={product.id} product={product} />;
                   });
                 }}
               </ProductConsumer>

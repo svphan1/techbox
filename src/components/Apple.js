@@ -7,7 +7,7 @@ import { CartButton } from "./css/CartButton";
 import { PhoneName } from "./css/PhoneName";
 import { ProductConsumer } from "../context";
 
-export default class Samsung extends Component {
+export default class Apple extends Component {
   render() {
     const { id, company, title, img, price, inCart } = this.props.product;
     return (

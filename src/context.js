@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { storeProducts, detailProduct } from "./data";
+import { allProducts, detailProduct } from "./data/data";
+import { appleProducts } from "./data/appledata";
+import { samsungProducts } from "./data/samsungdata";
 
 const ProductContext = React.createContext();
 //Provider
@@ -7,7 +9,9 @@ const ProductContext = React.createContext();
 
 class ProductProvider extends Component {
   state = {
-    products: storeProducts,
+    allProducts: allProducts,
+    appleProducts: appleProducts,
+    samsungProducts: samsungProducts,
     detailProduct: detailProduct
   }
 
