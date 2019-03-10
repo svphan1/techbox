@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import logo from "./img/box.png";
+import logo from "../img/box.png";
 import styled from "styled-components";
 import { NavButton } from "./css/NavButton";
 import { NavList } from "./css/NavList";

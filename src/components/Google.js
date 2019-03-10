@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { CartButton } from "./css/CartButton";
 import { PhoneName } from "./css/PhoneName";
 import { ProductConsumer } from "../context";
+import PropTypes from "prop-types";
 
 export default class Google extends Component {
   render() {
@@ -51,5 +52,15 @@ export default class Google extends Component {
     );
   }
 }
+
+Google.propTypes = {
+  product: PropTypes.shape({
+    id: PropTypes.number,
+    img: PropTypes.string,
+    title: PropTypes.string,
+    price: PropTypes.number,
+    incart: PropTypes.bool
+  }).isRequired
+};
 
 const ProductWrapper = styled.div``;

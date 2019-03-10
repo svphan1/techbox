@@ -7,22 +7,22 @@ import { HomeImage } from "./css/HomeImage";
 import { BestSellerTitle } from "./css/BestSellerTitle";
 import { FooterList } from "./css/FooterList";
 import "./css/Home.css";
-import fold from "./img/fold.png";
-import apple from "./img/applecover.png";
-import verizon from "./img/verizon.svg";
-import att from "./img/att.svg";
-import tmobile from "./img/tmobile.svg";
-import sprint from "./img/sprint.svg";
-import unlocked from "./img/unlocked.svg";
-import shipping from "./img/shipping.png";
-import paypal from "./img/paypal.png";
-import gear from "./img/gear.png";
-import press from "./img/press.png";
-import facebook from "./img/facebook.png";
-import instagram from "./img/instagram.png";
-import twitter from "./img/twitter.png";
-import pinterest from "./img/pinterest.png";
-import youtube from "./img/youtube.png";
+import fold from "../img/fold.png";
+import apple from "../img/applecover.png";
+import verizon from "../img/verizon.svg";
+import att from "../img/att.svg";
+import tmobile from "../img/tmobile.svg";
+import sprint from "../img/sprint.svg";
+import unlocked from "../img/unlocked.svg";
+import shipping from "../img/shipping.png";
+import paypal from "../img/paypal.png";
+import gear from "../img/gear.png";
+import press from "../img/press.png";
+import facebook from "../img/facebook.png";
+import instagram from "../img/instagram.png";
+import twitter from "../img/twitter.png";
+import pinterest from "../img/pinterest.png";
+import youtube from "../img/youtube.png";
 
 export default class ProductList extends Component {
   render() {

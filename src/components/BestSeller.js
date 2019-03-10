@@ -9,12 +9,12 @@ import { BestSellerImage } from "./css/BestSellerImage";
 import "./css/BestSeller.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import note9 from "./img/galaxynote9.png";
-import pixel3xl from "./img/pixel3xl.png";
-import iphonexsmax from "./img/iphonexsmax.png";
-import iphonexr from "./img/iphonexr.png";
-import galaxys10 from "./img/galaxys10.png";
-import iphone7 from "./img/iphone7.png";
+import note9 from "../img/galaxynote9.png";
+import pixel3xl from "../img/pixel3xl.png";
+import iphonexsmax from "../img/iphonexsmax.png";
+import iphonexr from "../img/iphonexr.png";
+import galaxys10 from "../img/galaxys10.png";
+import iphone7 from "../img/iphone7.png";
 
 function NextArrow(props) {
   const { className, style, onClick } = props;
@@ -88,7 +88,7 @@ export default class Product extends Component {
               Google <br /> Pixel 3 XL
             </BestSellerName>
             <p>Starting at $34.19/mo. or $819</p>
-            <BestButton>Learn more</BestButton>
+            <BestButton>Learn more./../public</BestButton>
           </BestSellerCard>
           <BestSellerCard className="photo-card">
             <BestSellerImage src={iphonexsmax} alt="iPhone XS Max" />
