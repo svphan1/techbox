@@ -49,9 +49,14 @@ export default class Details extends Component {
                   {/* buttons */}
                   <div className="d-flex justify-content-start">
                     <Link to="/productlist">
-                      <DetailsButton>Back to Products</DetailsButton>
+                      <DetailsButton cart>Back to Products</DetailsButton>
                     </Link>
-                    <DetailsButton disabled={inCart ? true : false}>
+                    <DetailsButton
+                      disabled={inCart ? true : false}
+                      onClick={() => {
+                        value.addToCart(id);
+                      }}
+                    >
                       {inCart ? "In Cart" : "Add To Cart"}
                     </DetailsButton>
                   </div>

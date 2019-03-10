@@ -13,40 +13,44 @@ export default class Product extends Component {
     return (
       <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
         <div className="card">
-          <div
-            className="img-container p-5"
-            onClick={() => console.log("clicked")}
-          >
-            <img src={img} alt="product" className="card-img-top" />
-
-            <div className="img-footer">
-              <hr className="product-hr" />
-              <PhoneName>
-                {company} <br /> {title} <p>${price}</p>
-              </PhoneName>
-            </div>
-
-            <div className="buttons">
-              <Link to="/details" style={{ textDecoration: "none" }}>
-                <CartButton className="product-btn">Details</CartButton>
-              </Link>
-              <CartButton
-                className="product-btn"
-                disabled={inCart ? true : false}
-                onClick={() => {
-                  console.log("added to cart");
-                }}
+          <ProductConsumer>
+            {value => (
+              <div
+                className="img-container p-5"
+                onClick={() => value.handleDetail(id)}
               >
-                {inCart ? (
-                  <p className="text-capitalize mb-0 cart-btn" disabled>
-                    in cart
-                  </p>
-                ) : (
-                  <i className="fas fa-cart-plus" />
-                )}
-              </CartButton>
-            </div>
-          </div>
+                <img src={img} alt="product" className="card-img-top" />
+
+                <div className="img-footer">
+                  <hr className="product-hr" />
+                  <PhoneName>
+                    {company} <br /> {title} <p>${price}</p>
+                  </PhoneName>
+                </div>
+
+                <div className="buttons">
+                  <Link to="/details" style={{ textDecoration: "none" }}>
+                    <CartButton className="product-btn" onClick={() => value.handleDetail(id)}>Details</CartButton>
+                  </Link>
+                  <CartButton
+                    className="product-btn"
+                    disabled={inCart ? true : false}
+                    onClick={() => {
+                      value.addToCart(id);
+                    }}
+                  >
+                    {inCart ? (
+                      <p className="text-capitalize mb-0 cart-btn" disabled>
+                        in cart
+                      </p>
+                    ) : (
+                      <i className="fas fa-cart-plus" />
+                    )}
+                  </CartButton>
+                </div>
+              </div>
+            )}
+          </ProductConsumer>
         </div>
       </ProductWrapper>
     );

@@ -5,10 +5,10 @@ export const DetailsButton = styled.button`
   font-size: 0.9rem;
   font-weight: bold;
   color: white;
-  background-color: rgb(87, 52, 140);
+  background-color: ${props => props.cart ? "rgb(87, 52, 140)" : "forestgreen"};
   display: flex;
   margin: 1rem 1rem 0 0;
-  border: 0.15rem solid rgb(87, 52, 140);
+  border: 0.15rem solid ${props => props.cart ? "rgb(87, 52, 140)" : "forestgreen"};
   cursor: pointer;
   border-radius: 3rem;
   padding: 0.2rem 0.8rem;

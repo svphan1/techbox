@@ -7,7 +7,6 @@ export const CardButton = styled.button`
   color: white;
   background-color: rgb(87, 52, 140);
   display: flex;
-  // margin: 1rem auto;
   border: 0.15rem solid rgb(87, 52, 140);
   cursor: pointer;
   border-radius: 3rem;

@@ -88,7 +88,7 @@ export default class Product extends Component {
               Google <br /> Pixel 3 XL
             </BestSellerName>
             <p className="price">Starting at $34.19/mo. or $819</p>
-            <BestButton>Learn more./../public</BestButton>
+            <BestButton>Learn more</BestButton>
           </BestSellerCard>
           <BestSellerCard className="photo-card">
             <BestSellerImage src={iphonexsmax} alt="iPhone XS Max" />
