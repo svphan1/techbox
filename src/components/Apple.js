@@ -6,6 +6,7 @@ import { CartButton } from "./css/CartButton";
 import { PhoneName } from "./css/PhoneName";
 import { ProductConsumer } from "../context";
 import PropTypes from "prop-types";
+import { appleProducts } from "../data/appledata";
 
 export default class Apple extends Component {
   render() {
@@ -17,7 +18,7 @@ export default class Apple extends Component {
             {value => (
               <div
                 className="img-container p-5"
-                onClick={() => console.log("clicked")}
+                onClick={() => value.handleAppleDetail(id)}
               >
                 <Link to="/details">
                   <img src={img} alt="product" className="card-img-top" />
@@ -33,7 +34,7 @@ export default class Apple extends Component {
                   <Link to="/details" style={{ textDecoration: "none" }}>
                     <CartButton
                       className="product-btn"
-                      onClick={() => value.handleDetail(id)}
+                      onClick={() => value.handleAppleDetail(id)}
                     >
                       Details
                     </CartButton>

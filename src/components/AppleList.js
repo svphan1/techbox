@@ -7,6 +7,7 @@ import { ProductConsumer } from "../context";
 
 export default class AppleList extends Component {
   render() {
+    console.log('apples', this.appleProducts)
     return (
       <React.Fragment>
         <BestSellerTitle className="list-title">Apple</BestSellerTitle>
