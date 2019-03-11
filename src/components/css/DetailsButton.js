@@ -5,10 +5,10 @@ export const DetailsButton = styled.button`
   font-size: 0.9rem;
   font-weight: bold;
   color: white;
-  background-color: ${props => props.cart ? "rgb(87, 52, 140)" : "forestgreen"};
+  background-color: ${props => props.cart ? "rgb(87, 52, 140)" : "rgb(95, 196, 45)"};
   display: flex;
   margin: 1rem 1rem 0 0;
-  border: 0.15rem solid ${props => props.cart ? "rgb(87, 52, 140)" : "forestgreen"};
+  border: 0.15rem solid ${props => props.cart ? "rgb(87, 52, 140)" : "rgb(95, 196, 45)"};
   cursor: pointer;
   border-radius: 3rem;
   padding: 0.2rem 0.8rem;
@@ -18,6 +18,7 @@ export const DetailsButton = styled.button`
     }
     &:hover {
       color: white;
-      text-decoration: underline;
+      background-color: ${props => props.cart ? "rgb(121, 85, 198)" : "rgb(136, 224, 92)"};
+      border: 0.15rem solid ${props => props.cart ? "rgb(121, 85, 198)" : "rgb(136, 224, 92)"};
     }
 `;

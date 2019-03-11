@@ -65,8 +65,9 @@
   }
 }
 
-.details-title {
+.details-name {
   margin-top: -3rem;
+  font-family: "Helvetica";
 }
 
 .details-img {

@@ -18,7 +18,7 @@ class ProductProvider extends Component {
     lgProducts: lgProducts,
     detailProduct: detailProduct,
     cart: [],
-    modalOpen: true,
+    modalOpen: false,
     modalProduct: detailProduct,
   };
 
@@ -108,7 +108,30 @@ class ProductProvider extends Component {
   };
 
   addAppleToCart = id => {
-    console.log(`hello from add to cart.id is ${id}`);
+    let tempProducts = [...this.state.appleProducts];
+    const index = tempProducts.indexOf(this.getAppleItem(id))
+    const product = tempProducts[index];
+    product.inCart = true;
+    product.count = 1;
+    const price = product.price;
+    product.total = price;
+
+    this.setState(() => {
+      return { appleProducts: tempProducts, cart:[...this.state.cart, product] };
+    }, () => {console.log(this.state)})
+  };
+
+  openAppleModal = id => {
+    const product = this.getAppleItem(id);
+    this.setState(() => {
+      return { modalProduct: product, modalOpen: true }
+    })
+  };
+
+  closeModal = () => {
+    this.setState(() => {
+      return { modalOpen: false }
+    })
   };
 
   // Set copy & method for sansumgProducts
@@ -137,7 +160,30 @@ class ProductProvider extends Component {
   };
 
   addSamsungToCart = id => {
-    console.log(`hello from add to cart.id is ${id}`);
+    let tempProducts = [...this.state.samsungProducts];
+    const index = tempProducts.indexOf(this.getSamsungItem(id))
+    const product = tempProducts[index];
+    product.inCart = true;
+    product.count = 1;
+    const price = product.price;
+    product.total = price;
+
+    this.setState(() => {
+      return { samsungProducts: tempProducts, cart:[...this.state.cart, product] };
+    }, () => {console.log(this.state)})
+  };
+
+  openSamsungModal = id => {
+    const product = this.getSamsungItem(id);
+    this.setState(() => {
+      return { modalProduct: product, modalOpen: true }
+    })
+  };
+
+  closeModal = () => {
+    this.setState(() => {
+      return { modalOpen: false }
+    })
   };
 
   // Set copy & method for googleProducts
@@ -205,7 +251,9 @@ class ProductProvider extends Component {
           ...this.state,
           handleDetail: this.handleDetail,
           addToCart: this.addToCart,
+          addAppleToCart: this.addAppleToCart,
           openModal: this.openModal,
+          openAppleModal: this.openAppleModal,
           closeModal: this.closeModal,
           handleAppleDetail: this.handleAppleDetail,
           handleSamsungDetail: this.handleSamsungDetail,

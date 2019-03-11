@@ -10,6 +10,7 @@ import LGList from "./components/LGList";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Details from "./components/Details";
+import AppleDetails from "./components/AppleDetails";
 import Cart from "./components/Cart";
 import NotFound from "./components/NotFound";
 import Modal from "./components/Modal"
@@ -27,6 +28,7 @@ class App extends Component {
           <Route path="/google" component={GoogleList} />
           <Route path="/lg" component={LGList} />
           <Route path="/details" component={Details} />
+          <Route path="/appledetails" component={AppleDetails} />
           <Route path="/cart" component={Cart} />
           <Route component={NotFound} />
         </Switch>

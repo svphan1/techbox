@@ -35,7 +35,7 @@ export default class Modal extends Component {
                       </h5>
                       <h5 className="text-muted">Price: ${price}</h5>
                       <div className="d-inline-block">
-                        <Link to="/productlist">
+                        <Link to="/productlist" style={{textDecoration: 'none'}}>
                           <DetailsButton
                             cart
                             className="modal-btn"
@@ -44,7 +44,7 @@ export default class Modal extends Component {
                             Continue Shopping
                           </DetailsButton>
                         </Link>
-                        <Link to="/cart">
+                        <Link to="/cart" style={{textDecoration: 'none'}}>
                           <DetailsButton
                             className="modal-btn"
                             onClick={() => closeModal()}

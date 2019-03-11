@@ -20,7 +20,7 @@ export default class Apple extends Component {
                 className="img-container p-5"
                 onClick={() => value.handleAppleDetail(id)}
               >
-                <Link to="/details">
+                <Link to="/appledetails">
                   <img src={img} alt="product" className="card-img-top" />
                 </Link>
                 <div className="img-footer">
@@ -43,7 +43,8 @@ export default class Apple extends Component {
                     className="product-btn"
                     disabled={inCart ? true : false}
                     onClick={() => {
-                      console.log("added to cart");
+                      value.addAppleToCart(id);
+                      value.openAppleModal(id);
                     }}
                   >
                     {inCart ? (
