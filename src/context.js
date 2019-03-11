@@ -17,7 +17,7 @@ class ProductProvider extends Component {
     googleProducts: [],
     lgProducts: [],
     detailProduct: detailProduct,
-    cart: allProducts,
+    cart: [],
     modalOpen: false,
     modalProduct: detailProduct,
     cartSubtotal: 0,
@@ -72,7 +72,7 @@ class ProductProvider extends Component {
         return { products: tempProducts, cart: [...this.state.cart, product] };
       },
       () => {
-        console.log(this.state);
+        this.addTotal();
       }
     );
   };
@@ -132,7 +132,7 @@ class ProductProvider extends Component {
         };
       },
       () => {
-        console.log(this.state);
+        this.addTotal();
       }
     );
   };
@@ -192,7 +192,7 @@ class ProductProvider extends Component {
         };
       },
       () => {
-        console.log(this.state);
+        this.addTotal();
       }
     );
   };
@@ -252,7 +252,7 @@ class ProductProvider extends Component {
         };
       },
       () => {
-        console.log(this.state);
+        this.addTotal();
       }
     );
   };
@@ -348,6 +348,21 @@ class ProductProvider extends Component {
 
   clearCart = () => {
     console.log("cart cleared");
+  };
+
+  addTotal = () => {
+    let subTotal = 0;
+    this.state.cart.map(item => (subTotal += item.total));
+    const tempTax = subTotal * 0.06;
+    const tax = parseFloat(tempTax.toFixed(2));
+    const total = subTotal + tax;
+    this.setState(() => {
+      return {
+        cartSubtotal: subTotal,
+        cartTax: tax,
+        cartTotal: total
+      };
+    });
   };
 
   render() {
