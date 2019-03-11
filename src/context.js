@@ -20,6 +20,9 @@ class ProductProvider extends Component {
     cart: [],
     modalOpen: false,
     modalProduct: detailProduct,
+    cartSubTotal: 0,
+    cartTax: 0,
+    cartTotal: 0
   };
 
   componentDidMount() {
@@ -57,29 +60,34 @@ class ProductProvider extends Component {
 
   addToCart = id => {
     let tempProducts = [...this.state.products];
-    const index = tempProducts.indexOf(this.getAllItem(id))
+    const index = tempProducts.indexOf(this.getAllItem(id));
     const product = tempProducts[index];
     product.inCart = true;
     product.count = 1;
     const price = product.price;
     product.total = price;
 
-    this.setState(() => {
-      return { products: tempProducts, cart:[...this.state.cart, product] };
-    }, () => {console.log(this.state)})
+    this.setState(
+      () => {
+        return { products: tempProducts, cart: [...this.state.cart, product] };
+      },
+      () => {
+        console.log(this.state);
+      }
+    );
   };
 
   openModal = id => {
     const product = this.getAllItem(id);
     this.setState(() => {
-      return { modalProduct: product, modalOpen: true }
-    })
+      return { modalProduct: product, modalOpen: true };
+    });
   };
 
   closeModal = () => {
     this.setState(() => {
-      return { modalOpen: false }
-    })
+      return { modalOpen: false };
+    });
   };
 
   // Set copy & method for appleProducts
@@ -109,29 +117,37 @@ class ProductProvider extends Component {
 
   addAppleToCart = id => {
     let tempProducts = [...this.state.appleProducts];
-    const index = tempProducts.indexOf(this.getAppleItem(id))
+    const index = tempProducts.indexOf(this.getAppleItem(id));
     const product = tempProducts[index];
     product.inCart = true;
     product.count = 1;
     const price = product.price;
     product.total = price;
 
-    this.setState(() => {
-      return { appleProducts: tempProducts, cart:[...this.state.cart, product] };
-    }, () => {console.log(this.state)})
+    this.setState(
+      () => {
+        return {
+          appleProducts: tempProducts,
+          cart: [...this.state.cart, product]
+        };
+      },
+      () => {
+        console.log(this.state);
+      }
+    );
   };
 
   openAppleModal = id => {
     const product = this.getAppleItem(id);
     this.setState(() => {
-      return { modalProduct: product, modalOpen: true }
-    })
+      return { modalProduct: product, modalOpen: true };
+    });
   };
 
   closeModal = () => {
     this.setState(() => {
-      return { modalOpen: false }
-    })
+      return { modalOpen: false };
+    });
   };
 
   // Set copy & method for sansumgProducts
@@ -161,29 +177,37 @@ class ProductProvider extends Component {
 
   addSamsungToCart = id => {
     let tempProducts = [...this.state.samsungProducts];
-    const index = tempProducts.indexOf(this.getSamsungItem(id))
+    const index = tempProducts.indexOf(this.getSamsungItem(id));
     const product = tempProducts[index];
     product.inCart = true;
     product.count = 1;
     const price = product.price;
     product.total = price;
 
-    this.setState(() => {
-      return { samsungProducts: tempProducts, cart:[...this.state.cart, product] };
-    }, () => {console.log(this.state)})
+    this.setState(
+      () => {
+        return {
+          samsungProducts: tempProducts,
+          cart: [...this.state.cart, product]
+        };
+      },
+      () => {
+        console.log(this.state);
+      }
+    );
   };
 
   openSamsungModal = id => {
     const product = this.getSamsungItem(id);
     this.setState(() => {
-      return { modalProduct: product, modalOpen: true }
-    })
+      return { modalProduct: product, modalOpen: true };
+    });
   };
 
   closeModal = () => {
     this.setState(() => {
-      return { modalOpen: false }
-    })
+      return { modalOpen: false };
+    });
   };
 
   // Set copy & method for googleProducts
@@ -213,29 +237,37 @@ class ProductProvider extends Component {
 
   addGoogleToCart = id => {
     let tempProducts = [...this.state.googleProducts];
-    const index = tempProducts.indexOf(this.getGoogleItem(id))
+    const index = tempProducts.indexOf(this.getGoogleItem(id));
     const product = tempProducts[index];
     product.inCart = true;
     product.count = 1;
     const price = product.price;
     product.total = price;
 
-    this.setState(() => {
-      return { googleProducts: tempProducts, cart:[...this.state.cart, product] };
-    }, () => {console.log(this.state)})
+    this.setState(
+      () => {
+        return {
+          googleProducts: tempProducts,
+          cart: [...this.state.cart, product]
+        };
+      },
+      () => {
+        console.log(this.state);
+      }
+    );
   };
 
   openGoogleModal = id => {
     const product = this.getGoogleItem(id);
     this.setState(() => {
-      return { modalProduct: product, modalOpen: true }
-    })
+      return { modalProduct: product, modalOpen: true };
+    });
   };
 
   closeModal = () => {
     this.setState(() => {
-      return { modalOpen: false }
-    })
+      return { modalOpen: false };
+    });
   };
 
   // Set copy & method for LGProducts
@@ -265,29 +297,57 @@ class ProductProvider extends Component {
 
   addLGToCart = id => {
     let tempProducts = [...this.state.lgProducts];
-    const index = tempProducts.indexOf(this.getLGItem(id))
+    const index = tempProducts.indexOf(this.getLGItem(id));
     const product = tempProducts[index];
     product.inCart = true;
     product.count = 1;
     const price = product.price;
     product.total = price;
 
-    this.setState(() => {
-      return { lgProducts: tempProducts, cart:[...this.state.cart, product] };
-    }, () => {console.log(this.state)})
+    this.setState(
+      () => {
+        return {
+          lgProducts: tempProducts,
+          cart: [...this.state.cart, product]
+        };
+      },
+      () => {
+        console.log(this.state);
+      }
+    );
   };
 
   openLGModal = id => {
     const product = this.getLGItem(id);
     this.setState(() => {
-      return { modalProduct: product, modalOpen: true }
-    })
+      return { modalProduct: product, modalOpen: true };
+    });
   };
 
   closeModal = () => {
     this.setState(() => {
-      return { modalOpen: false }
-    })
+      return { modalOpen: false };
+    });
+  };
+
+  // end of brand methods  //
+
+  // start of cart methods //
+
+  increment = id => {
+    console.log("this is increment method");
+  };
+
+  decrement = id => {
+    console.log("this is decrement method");
+  };
+
+  removeItem = id => {
+    console.log("item removed");
+  };
+
+  clearCart = () => {
+    console.log("cart cleared");
   };
 
   render() {
@@ -305,12 +365,16 @@ class ProductProvider extends Component {
           openAppleModal: this.openAppleModal,
           openSamsungModal: this.openSamsungModal,
           openGoogleModal: this.openGoogleModal,
-          openLGModal: this.openLGModal,
-          closeModal: this.closeModal,
           handleAppleDetail: this.handleAppleDetail,
           handleSamsungDetail: this.handleSamsungDetail,
           handleGoogleDetail: this.handleGoogleDetail,
-          handleLGDetail: this.handleLGDetail
+          handleLGDetail: this.handleLGDetail,
+          openLGModal: this.openLGModal,
+          closeModal: this.closeModal,
+          increment: this.increment,
+          decrement: this.decrement,
+          removeItem: this.removeItem,
+          clearCart: this.clearCart
         }}
       >
         {this.props.children}
