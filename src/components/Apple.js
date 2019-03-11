@@ -31,7 +31,7 @@ export default class Apple extends Component {
                 </div>
 
                 <div className="buttons">
-                  <Link to="/details" style={{ textDecoration: "none" }}>
+                  <Link to="/appledetails" style={{ textDecoration: "none" }}>
                     <CartButton
                       className="product-btn"
                       onClick={() => value.handleAppleDetail(id)}

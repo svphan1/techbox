@@ -19,7 +19,7 @@ export default class Samsung extends Component {
                 className="img-container p-5"
                 onClick={() => value.handleSamsungDetail(id)}
               >
-                <Link to="/details">
+                <Link to="/samsungdetails">
                   <img src={img} alt="product" className="card-img-top" />
                 </Link>
                 <div className="img-footer">
@@ -42,7 +42,8 @@ export default class Samsung extends Component {
                     className="product-btn"
                     disabled={inCart ? true : false}
                     onClick={() => {
-                      console.log("added to cart");
+                      value.addSamsungToCart(id);
+                      value.openSamsungModal(id);
                     }}
                   >
                     {inCart ? (
