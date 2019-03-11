@@ -38,7 +38,7 @@ body {
   font-size: 0.8rem !important;
   color: var(--mainDark);
   border-radius: 0 !important;
-  border: 0.1rem solid var(--mainDark) !important;
+  border: 1px solid var(--mainDark) !important;
 }
 
 .btn-total {
@@ -47,7 +47,7 @@ body {
   font-size: 0.8rem !important;
   color: var(--mainDark);
   border-radius: 0 !important;
-  border: 0.1rem solid var(--mainDark) !important;
+  border: 1px solid var(--mainDark) !important;
 }
 
 .btn-black:hover {
@@ -59,4 +59,8 @@ body {
   cursor: pointer;
   font-size: 1.2rem;
   color: var(--mainRed);
+}
+
+.shopping-cart {
+  font-size: 2.5rem !important;
 }

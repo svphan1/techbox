@@ -14,12 +14,12 @@ export default function CartItem({ item, value }) {
         />
       </div>
       <div className="col-10 mx-auto col-lg-2">
-        <span className="d-lg-none">
-          Product: {company} {title}
+        <span>
+          {company} {title}
         </span>
       </div>
       <div className="col-10 mx-auto col-lg-2">
-        <span className="d-lg-none">Price: {price}</span>
+        <span>$ {price}</span>
       </div>
       <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">
         <div className="d-flex justify-content-center">

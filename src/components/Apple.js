@@ -6,7 +6,6 @@ import { CartButton } from "./css/CartButton";
 import { PhoneName } from "./css/PhoneName";
 import { ProductConsumer } from "../context";
 import PropTypes from "prop-types";
-import { appleProducts } from "../data/appledata";
 
 export default class Apple extends Component {
   render() {

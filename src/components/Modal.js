@@ -22,7 +22,7 @@ export default class Modal extends Component {
                   <div className="row">
                     <div
                       id="modal"
-                      className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5"
+                      className="col-8 mx-auto col-md-6 col-lg-4 text-center p-5"
                     >
                       <h5>Item added to cart!</h5>
                       <img
@@ -35,7 +35,10 @@ export default class Modal extends Component {
                       </h5>
                       <h5 className="text-muted">Price: ${price}</h5>
                       <div className="d-inline-block">
-                        <Link to="/productlist" style={{textDecoration: 'none'}}>
+                        <Link
+                          to="/productlist"
+                          style={{ textDecoration: "none" }}
+                        >
                           <DetailsButton
                             cart
                             className="modal-btn"
@@ -44,7 +47,7 @@ export default class Modal extends Component {
                             Continue Shopping
                           </DetailsButton>
                         </Link>
-                        <Link to="/cart" style={{textDecoration: 'none'}}>
+                        <Link to="/cart" style={{ textDecoration: "none" }}>
                           <DetailsButton
                             className="modal-btn"
                             onClick={() => closeModal()}
@@ -59,7 +62,6 @@ export default class Modal extends Component {
               </ModalContainer>
             );
           }
-          return;
         }}
       </ProductConsumer>
     );

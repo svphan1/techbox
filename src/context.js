@@ -17,10 +17,10 @@ class ProductProvider extends Component {
     googleProducts: [],
     lgProducts: [],
     detailProduct: detailProduct,
-    cart: [],
+    cart: allProducts,
     modalOpen: false,
     modalProduct: detailProduct,
-    cartSubTotal: 0,
+    cartSubtotal: 0,
     cartTax: 0,
     cartTotal: 0
   };

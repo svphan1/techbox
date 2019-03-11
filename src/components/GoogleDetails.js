@@ -62,7 +62,7 @@ export default class Details extends Component {
                         value.openGoogleModal(id);
                       }}
                     >
-                      {inCart ? "In Cart" : "Add To Cart"}
+                      {inCart ? "In Cart" : "Add to Cart"}
                     </DetailsButton>
                   </div>
                 </div>
