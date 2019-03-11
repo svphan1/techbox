@@ -52,14 +52,14 @@ export default class Details extends Component {
                   <p className="text-muted">{info}</p>
                   {/* buttons */}
                   <div className="d-flex justify-content-start">
-                    <Link to="/samsung" style={{ textDecoration: "none" }}>
+                    <Link to="/google" style={{ textDecoration: "none" }}>
                       <DetailsButton cart>Back to Products</DetailsButton>
                     </Link>
                     <DetailsButton
                       disabled={inCart ? true : false}
                       onClick={() => {
-                        value.addSamsungToCart(id);
-                        value.openSamsungModal(id);
+                        value.addGoogleToCart(id);
+                        value.openGoogleModal(id);
                       }}
                     >
                       {inCart ? "In Cart" : "Add To Cart"}

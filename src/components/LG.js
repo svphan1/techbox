@@ -19,7 +19,7 @@ export default class LG extends Component {
                 className="img-container p-5"
                 onClick={() => value.handleLGDetail(id)}
               >
-                <Link to="/details">
+                <Link to="/lgdetails">
                   <img src={img} alt="product" className="card-img-top" />
                 </Link>
                 <div className="img-footer">
@@ -30,7 +30,7 @@ export default class LG extends Component {
                 </div>
 
                 <div className="buttons">
-                  <Link to="/details" style={{ textDecoration: "none" }}>
+                  <Link to="/lgdetails" style={{ textDecoration: "none" }}>
                     <CartButton
                       className="product-btn"
                       onClick={() => value.handleLGDetail(id)}
@@ -42,7 +42,8 @@ export default class LG extends Component {
                     className="product-btn"
                     disabled={inCart ? true : false}
                     onClick={() => {
-                      console.log("added to cart");
+                      value.addLGToCart(id);
+                      value.openLGModal(id);
                     }}
                   >
                     {inCart ? (

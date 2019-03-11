@@ -14,8 +14,8 @@ class ProductProvider extends Component {
     products: [],
     appleProducts: [],
     samsungProducts: [],
-    googleProducts: googleProducts,
-    lgProducts: lgProducts,
+    googleProducts: [],
+    lgProducts: [],
     detailProduct: detailProduct,
     cart: [],
     modalOpen: false,
@@ -212,7 +212,30 @@ class ProductProvider extends Component {
   };
 
   addGoogleToCart = id => {
-    console.log(`hello from add to cart.id is ${id}`);
+    let tempProducts = [...this.state.googleProducts];
+    const index = tempProducts.indexOf(this.getGoogleItem(id))
+    const product = tempProducts[index];
+    product.inCart = true;
+    product.count = 1;
+    const price = product.price;
+    product.total = price;
+
+    this.setState(() => {
+      return { googleProducts: tempProducts, cart:[...this.state.cart, product] };
+    }, () => {console.log(this.state)})
+  };
+
+  openGoogleModal = id => {
+    const product = this.getGoogleItem(id);
+    this.setState(() => {
+      return { modalProduct: product, modalOpen: true }
+    })
+  };
+
+  closeModal = () => {
+    this.setState(() => {
+      return { modalOpen: false }
+    })
   };
 
   // Set copy & method for LGProducts
@@ -241,7 +264,30 @@ class ProductProvider extends Component {
   };
 
   addLGToCart = id => {
-    console.log(`hello from add to cart.id is ${id}`);
+    let tempProducts = [...this.state.lgProducts];
+    const index = tempProducts.indexOf(this.getLGItem(id))
+    const product = tempProducts[index];
+    product.inCart = true;
+    product.count = 1;
+    const price = product.price;
+    product.total = price;
+
+    this.setState(() => {
+      return { lgProducts: tempProducts, cart:[...this.state.cart, product] };
+    }, () => {console.log(this.state)})
+  };
+
+  openLGModal = id => {
+    const product = this.getLGItem(id);
+    this.setState(() => {
+      return { modalProduct: product, modalOpen: true }
+    })
+  };
+
+  closeModal = () => {
+    this.setState(() => {
+      return { modalOpen: false }
+    })
   };
 
   render() {
@@ -253,9 +299,13 @@ class ProductProvider extends Component {
           addToCart: this.addToCart,
           addAppleToCart: this.addAppleToCart,
           addSamsungToCart: this.addSamsungToCart,
+          addGoogleToCart: this.addGoogleToCart,
+          addLGToCart: this.addLGToCart,
           openModal: this.openModal,
           openAppleModal: this.openAppleModal,
           openSamsungModal: this.openSamsungModal,
+          openGoogleModal: this.openGoogleModal,
+          openLGModal: this.openLGModal,
           closeModal: this.closeModal,
           handleAppleDetail: this.handleAppleDetail,
           handleSamsungDetail: this.handleSamsungDetail,

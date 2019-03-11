@@ -19,7 +19,7 @@ export default class Google extends Component {
                 className="img-container p-5"
                 onClick={() => value.handleDetail(id)}
               >
-                <Link to="/details">
+                <Link to="/googledetails">
                   <img src={img} alt="product" className="card-img-top" />
                 </Link>
                 <div className="img-footer">
@@ -30,10 +30,10 @@ export default class Google extends Component {
                 </div>
 
                 <div className="buttons">
-                  <Link to="/details" style={{ textDecoration: "none" }}>
+                  <Link to="/googledetails" style={{ textDecoration: "none" }}>
                     <CartButton
                       className="product-btn"
-                      onClick={() => value.handleDetail(id)}
+                      onClick={() => value.handleGoogleDetail(id)}
                     >
                       Details
                     </CartButton>
@@ -42,7 +42,8 @@ export default class Google extends Component {
                     className="product-btn"
                     disabled={inCart ? true : false}
                     onClick={() => {
-                      console.log("added to cart");
+                      value.addGoogleToCart(id);
+                      value.openGoogleModal(id);
                     }}
                   >
                     {inCart ? (

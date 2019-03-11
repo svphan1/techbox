@@ -12,6 +12,8 @@ import Home from "./components/Home";
 import Details from "./components/Details";
 import AppleDetails from "./components/AppleDetails";
 import SamsungDetails from "./components/SamsungDetails";
+import GoogleDetails from "./components/GoogleDetails";
+import LGDetails from "./components/LGDetails";
 import Cart from "./components/Cart";
 import NotFound from "./components/NotFound";
 import Modal from "./components/Modal"
@@ -31,6 +33,8 @@ class App extends Component {
           <Route path="/details" component={Details} />
           <Route path="/appledetails" component={AppleDetails} />
           <Route path="/samsungdetails" component={SamsungDetails} />
+          <Route path="/googledetails" component={GoogleDetails} />
+          <Route path="/lgdetails" component={LGDetails} />
           <Route path="/cart" component={Cart} />
           <Route component={NotFound} />
         </Switch>
