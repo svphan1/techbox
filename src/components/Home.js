@@ -8,7 +8,7 @@ import { BestSellerTitle } from "./css/BestSellerTitle";
 import { FooterList } from "./css/FooterList";
 import "./css/Home.css";
 import fold from "../img/fold.png";
-import apple from "../img/applecover.png";
+import apple from "../img/applecover2.png";
 import verizon from "../img/verizon.svg";
 import att from "../img/att.svg";
 import tmobile from "../img/tmobile.svg";
@@ -43,6 +43,17 @@ export default class ProductList extends Component {
             </div>
           </div>
         </div>
+
+        <div className="arrow bounce">
+          <a
+            className="fa fa-angle-down fa-3x arrow-icon"
+            style={{ textDecoration: "none" }}
+            href="#"
+          />
+        </div>
+
+        <div className="below" />
+
         <hr className="home-hr" />
 
         <h4 className="compatible">Compatible phones for all carriers</h4>
@@ -62,16 +73,13 @@ export default class ProductList extends Component {
 
         <div>
           <img className="apple" src={apple} alt="apple" width="100%" />
-          <h1 className="caption">
-            Get the products you want, <br /> fast and secured.
-          </h1>
         </div>
 
         <section className="container">
           <div className="container">
             <div className="ad">
               <img src={shipping} className="shipping" alt="shipping" />
-              <p className="ad-title">Fast and free delivery.</p>
+              <p className="ad-title">Fast and Free Delivery</p>
               <p className="paragraph">
                 Get free next-day delivery on any in-stock phones and free
                 two-day delivery on almost everything else. Faster options are
@@ -123,35 +131,67 @@ export default class ProductList extends Component {
           <div className="container foot">
             <ul className="social">
               <li className="social-items">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                  <img className="social-img" src={facebook} alt="facebook img"/>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="social-img"
+                    src={facebook}
+                    alt="facebook img"
+                  />
                 </a>
               </li>
               <li className="social-items">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                  <img className="social-img" src={instagram} alt="instagram img"/>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="social-img"
+                    src={instagram}
+                    alt="instagram img"
+                  />
                 </a>
               </li>
               <li className="social-items">
-                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                  <img className="social-img" src={twitter} alt="twitter img"/>
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img className="social-img" src={twitter} alt="twitter img" />
                 </a>
               </li>
               <li className="social-items">
-                <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
-                  <img className="social-img" src={pinterest} alt="pinterest img"/>
+                <a
+                  href="https://www.pinterest.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="social-img"
+                    src={pinterest}
+                    alt="pinterest img"
+                  />
                 </a>
               </li>
               <li className="social-items">
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-                  <img className="social-img" src={youtube} alt="youtube img"/>
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img className="social-img" src={youtube} alt="youtube img" />
                 </a>
               </li>
             </ul>
 
             <section className="footer-info">
               <article className="footer-info-col">
-              <hr className="footer-hr"></hr>
+                <hr className="footer-hr" />
                 <h5 className="footer-info-name">Products</h5>
                 <ul className="footer-info-list">
                   <FooterList>Apple</FooterList>
@@ -161,7 +201,7 @@ export default class ProductList extends Component {
                 </ul>
               </article>
               <article className="footer-info-col">
-              <hr className="footer-hr"></hr>
+                <hr className="footer-hr" />
                 <h5 className="footer-info-name">About</h5>
                 <ul className="footer-info-list">
                   <FooterList>Our Products</FooterList>
@@ -172,7 +212,7 @@ export default class ProductList extends Component {
                 </ul>
               </article>
               <article className="footer-info-col">
-              <hr className="footer-hr"></hr>
+                <hr className="footer-hr" />
                 <h5 className="footer-info-name">Legal</h5>
                 <ul className="footer-info-list">
                   <FooterList>Terms & Conditions</FooterList>
@@ -183,7 +223,7 @@ export default class ProductList extends Component {
                 </ul>
               </article>
               <article className="footer-info-col">
-              <hr className="footer-hr"></hr>
+                <hr className="footer-hr" />
                 <h5 className="footer-info-name">Resources</h5>
                 <ul className="footer-info-list">
                   <FooterList>My Account</FooterList>
@@ -194,7 +234,7 @@ export default class ProductList extends Component {
                 </ul>
               </article>
             </section>
-            <hr className="footer-hr"></hr>
+            <hr className="footer-hr" />
             <p className="copyright">©Copyright 2019 Techbox </p>
           </div>
         </footer>
