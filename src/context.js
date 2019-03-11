@@ -343,11 +343,43 @@ class ProductProvider extends Component {
   };
 
   removeItem = id => {
-    console.log("item removed");
+    let tempProducts = [...this.state.products];
+    let tempCart = [...this.state.cart];
+
+    tempCart = tempCart.filter(item => item.id !== id);
+    const index = tempProducts.indexOf(this.getAllItem(id));
+    let removedProduct = tempProducts[index];
+    removedProduct.inCart = false;
+    removedProduct.count = 0;
+    removedProduct.total = 0;
+
+    this.setState(
+      () => {
+        return {
+          cart: [...tempCart],
+          products: [...tempProducts],
+        };
+      },
+      () => {
+        this.addTotal();
+      }
+    );
   };
 
   clearCart = () => {
-    console.log("cart cleared");
+    this.setState(
+      () => {
+        return { cart: [] };
+      },
+      () => {
+        this.setProducts();
+        this.setAppleProducts();
+        this.setSamsungProducts();
+        this.setGoogleProducts();
+        this.setLGProducts();
+        this.addTotal();
+      }
+    );
   };
 
   addTotal = () => {
