@@ -63,7 +63,7 @@ export default class ProductList extends Component {
         <div>
           <img className="apple" src={apple} alt="apple" width="100%" />
           <h1 className="caption">
-            Get the products you want, <br /> the way you want it.
+            Get the products you want, <br /> fast and secured.
           </h1>
         </div>
 
