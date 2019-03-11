@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Title } from "../css/Title";
 import CartColumns from "./CartColumns";
 import EmptyCart from "./EmptyCart";
 import { ProductConsumer } from "../../context";
@@ -16,9 +15,9 @@ export default class Cart extends Component {
             if (cart.length > 0) {
               return (
                 <React.Fragment>
-                  <Title className="text-center my-5 shopping-cart">
+                  <h2 className="text-center my-5 shopping-cart">
                     Shopping Cart
-                  </Title>
+                  </h2>
                   <CartColumns />
                   <CartList value={value} />
                   <CartTotal value={value} history={this.props.history} />
