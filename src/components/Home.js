@@ -45,7 +45,7 @@ export default class ProductList extends Component {
         </div>
 
         <div className="arrow bounce">
-          <a
+          <button
             className="fa fa-angle-down fa-3x arrow-icon"
             style={{ textDecoration: "none" }}
             href="#"

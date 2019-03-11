@@ -198,6 +198,12 @@
 .arrow-icon {
   color: #333;
   text-decoration: none;
+  background-color: rgb(250, 250, 250);
+  border: 0px solid rgb(255, 255, 255);
+}
+
+.arrow-icon:focus {
+  outline: none;
 }
 
 .arrow-icon:hover {
