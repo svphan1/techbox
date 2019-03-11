@@ -8,7 +8,7 @@ export default function CartColumns() {
           <p className="text-uppercase">Products</p>
         </div>
         <div className="col-10 xm-auto col-lg-2">
-          <p className="text-uppercase">Name of product</p>
+          <p className="text-uppercase">Product Name</p>
         </div>
         <div className="col-10 xm-auto col-lg-2">
           <p className="text-uppercase">Price</p>
@@ -17,10 +17,10 @@ export default function CartColumns() {
           <p className="text-uppercase">Quantity</p>
         </div>
         <div className="col-10 xm-auto col-lg-2">
-          <p className="text-uppercase">Remove</p>
+          <p className="text-uppercase">Total</p>
         </div>
         <div className="col-10 xm-auto col-lg-2">
-          <p className="text-uppercase">Total</p>
+          <p className="text-uppercase">Remove</p>
         </div>
       </div>
     </div>

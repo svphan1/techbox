@@ -4,22 +4,22 @@
   --mainWhite: rgb(250, 250, 250);
   --mainGray: rgb(133, 142, 150);
   --mainDark: rgb(32, 35, 36);
-  --mainYellow: #ffa400; 
+  --mainRed: #d63909;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .text-title {
-  font-family: 'Merriweather', serif !important;
+  font-family: "Merriweather", serif !important;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
@@ -32,3 +32,31 @@ body {
   color: var(--lightBlue);
 }
 
+.btn-black {
+  background: #ccc;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+
+.btn-total {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+
+.btn-black:hover {
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainRed);
+}
