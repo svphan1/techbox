@@ -5,5 +5,6 @@ export const Title = styled.h3`
   font-weight: bold;
   font-size: 3rem;
   line-height: 3.6rem;
-  margin-top: 7rem;
+  margin-top: 8rem;
+  animation: moveInBottom 0.7s ease-out;
 `;

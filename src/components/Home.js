@@ -31,7 +31,7 @@ export default class ProductList extends Component {
         <div className="container">
           <div className="row">
             <div className="col title">
-              <Title>Galaxy Fold</Title>
+              <Title className="galaxy-title">Galaxy Fold</Title>
               <h3 className="sign-up">
                 Sign up for a chance to win Samsung's latest Galaxy Fold!{" "}
                 <strong>#DoWhatYouCant</strong>
