@@ -14,7 +14,7 @@ import AppleDetails from "./components/AppleDetails";
 import SamsungDetails from "./components/SamsungDetails";
 import GoogleDetails from "./components/GoogleDetails";
 import LGDetails from "./components/LGDetails";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
 import NotFound from "./components/NotFound";
 import Modal from "./components/Modal"
 
