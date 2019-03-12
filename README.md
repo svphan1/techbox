@@ -4,7 +4,7 @@
 Techbox is a mock E-Commerce website that sells cellphones. Users will be able to browse the bestsellers or specific brands and add items to the shopping cart. In the shopping cart, users have the ability to change the quantity and the total will update to reflect products. Users can also checkout through a sandbox PayPal.
 
 ### Demo:
-[Website](http://sonvphan.com/)
+[Website](http://react-ecommerce-phan.surge.sh/)
 
 ## Build:
 - React
