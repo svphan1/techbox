@@ -1,10 +1,10 @@
 # Techbox
 
 ### About
-Techbox is a mock E-Commerce website that sells cellphones. Users will be able to browse the bestsellers or specific brands and add items to the shopping cart. In the shopping cart, users have the ability to change the quantity and the total will update to reflect products. Users can also checkout through a sandbox PayPal.
+Techbox is a mock E-Commerce website that sells cell phones. Users will be able to browse the bestsellers or specific brands and add them to the shopping cart. In the shopping cart, users have the ability to change the quantity and the total will update to reflect amount. Users can also checkout through a sandbox PayPal.
 
 ### Demo:
-[Website](http://react-techbox.surge.sh/)
+[Website](https://techbox-react.netlify.com/)
 
 ## Build:
 - React
@@ -12,7 +12,7 @@ Techbox is a mock E-Commerce website that sells cellphones. Users will be able t
 - JavaScript <br />
 - CSS3 <br />
 - Bootstrap <br />
-- Netlify
+- Deployed with Netlify
 
 Current progress:
 <img width="1264" alt="Screen Shot 2019-03-11 at 17 41 58" src="https://user-images.githubusercontent.com/36240410/54165690-717de480-4427-11e9-9f77-a0b8112e8840.png">
