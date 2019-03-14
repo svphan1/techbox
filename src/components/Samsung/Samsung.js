@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import "./css/Product.css";
+import "../css/Product.css";
 import { Link } from "react-router-dom";
-import { CartButton } from "./css/CartButton";
-import { PhoneName } from "./css/PhoneName";
-import { ProductConsumer } from "../context";
+import { CartButton } from "../css/CartButton";
+import { PhoneName } from "../css/PhoneName";
+import { ProductConsumer } from "../../context";
 import PropTypes from "prop-types";
 
 export default class Samsung extends Component {

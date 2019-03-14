@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import "./css/Product.css";
+import "../css/Product.css";
 import { Link } from "react-router-dom";
-import { CartButton } from "./css/CartButton";
-import { PhoneName } from "./css/PhoneName";
-import { ProductConsumer } from "../context";
+import { CartButton } from "../css/CartButton";
+import { PhoneName } from "../css/PhoneName";
+import { ProductConsumer } from "../../context";
 import PropTypes from "prop-types";
 
-export default class Product extends Component {
+export default class LG extends Component {
   render() {
     const { id, company, title, img, price, inCart } = this.props.product;
     return (
@@ -17,9 +17,9 @@ export default class Product extends Component {
             {value => (
               <div
                 className="img-container p-5"
-                onClick={() => value.handleDetail(id)}
+                onClick={() => value.handleLGDetail(id)}
               >
-                <Link to="/details">
+                <Link to="/lgdetails">
                   <img src={img} alt="product" className="card-img-top" />
                 </Link>
                 <div className="img-footer">
@@ -30,10 +30,10 @@ export default class Product extends Component {
                 </div>
 
                 <div className="buttons">
-                  <Link to="/details" style={{ textDecoration: "none" }}>
+                  <Link to="/lgdetails" style={{ textDecoration: "none" }}>
                     <CartButton
                       className="product-btn"
-                      onClick={() => value.handleDetail(id)}
+                      onClick={() => value.handleLGDetail(id)}
                     >
                       Details
                     </CartButton>
@@ -42,8 +42,8 @@ export default class Product extends Component {
                     className="product-btn"
                     disabled={inCart ? true : false}
                     onClick={() => {
-                      value.addToCart(id);
-                      value.openModal(id);
+                      value.addLGToCart(id);
+                      value.openLGModal(id);
                     }}
                   >
                     {inCart ? (
@@ -64,7 +64,7 @@ export default class Product extends Component {
   }
 }
 
-Product.propTypes = {
+LG.propTypes = {
   product: PropTypes.shape({
     id: PropTypes.number,
     img: PropTypes.string,

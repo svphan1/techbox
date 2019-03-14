@@ -2,21 +2,21 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ProductList from "./components/ProductList";
+import ProductList from "./components/AllProducts/ProductList";
 import AppleList from "./components/Apple/AppleList";
-import SamsungList from "./components/SamsungList";
+import SamsungList from "./components/Samsung/SamsungList";
 import GoogleList from "./components/Google/GoogleList";
-import LGList from "./components/LGList";
+import LGList from "./components/LG/LGList";
 import NavBar from "./components/NavBar";
-import Home from "./components/Home";
-import Details from "./components/Details";
+import Home from "./components/Home/Home";
+import Details from "./components/AllProducts/Details";
 import AppleDetails from "./components/Apple/AppleDetails";
-import SamsungDetails from "./components/SamsungDetails";
+import SamsungDetails from "./components/Samsung/SamsungDetails";
 import GoogleDetails from "./components/Google/GoogleDetails";
-import LGDetails from "./components/LGDetails";
+import LGDetails from "./components/LG/LGDetails";
 import Cart from "./components/Cart/Cart";
 import NotFound from "./components/NotFound";
-import Modal from "./components/Modal"
+import Modal from "./components/Modal";
 
 class App extends Component {
   render() {
@@ -38,7 +38,7 @@ class App extends Component {
           <Route path="/cart" component={Cart} />
           <Route component={NotFound} />
         </Switch>
-        <Modal/>
+        <Modal />
       </React.Fragment>
     );
   }

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./css/Product.css";
-import { ProductConsumer } from "../context";
+import "../css/Product.css";
+import { ProductConsumer } from "../../context";
 import { Link } from "react-router-dom";
-import { DetailsButton } from "./css/DetailsButton.js";
+import { DetailsButton } from "../css/DetailsButton.js";
 
 export default class Details extends Component {
   render() {
