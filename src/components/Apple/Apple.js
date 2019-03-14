@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import "./css/Product.css";
+import "../css/Product.css";
 import { Link } from "react-router-dom";
-import { CartButton } from "./css/CartButton";
-import { PhoneName } from "./css/PhoneName";
-import { ProductConsumer } from "../context";
+import { CartButton } from "../css/CartButton";
+import { PhoneName } from "../css/PhoneName";
+import { ProductConsumer } from "../../context";
 import PropTypes from "prop-types";
 
-export default class Google extends Component {
+export default class Apple extends Component {
   render() {
     const { id, company, title, img, price, inCart } = this.props.product;
     return (
@@ -17,9 +17,9 @@ export default class Google extends Component {
             {value => (
               <div
                 className="img-container p-5"
-                onClick={() => value.handleDetail(id)}
+                onClick={() => value.handleAppleDetail(id)}
               >
-                <Link to="/googledetails">
+                <Link to="/appledetails">
                   <img src={img} alt="product" className="card-img-top" />
                 </Link>
                 <div className="img-footer">
@@ -30,10 +30,10 @@ export default class Google extends Component {
                 </div>
 
                 <div className="buttons">
-                  <Link to="/googledetails" style={{ textDecoration: "none" }}>
+                  <Link to="/appledetails" style={{ textDecoration: "none" }}>
                     <CartButton
                       className="product-btn"
-                      onClick={() => value.handleGoogleDetail(id)}
+                      onClick={() => value.handleAppleDetail(id)}
                     >
                       Details
                     </CartButton>
@@ -42,8 +42,8 @@ export default class Google extends Component {
                     className="product-btn"
                     disabled={inCart ? true : false}
                     onClick={() => {
-                      value.addGoogleToCart(id);
-                      value.openGoogleModal(id);
+                      value.addAppleToCart(id);
+                      value.openAppleModal(id);
                     }}
                   >
                     {inCart ? (
@@ -64,7 +64,7 @@ export default class Google extends Component {
   }
 }
 
-Google.propTypes = {
+Apple.propTypes = {
   product: PropTypes.shape({
     id: PropTypes.number,
     img: PropTypes.string,

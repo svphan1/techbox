@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Apple from "./Apple";
-import { Title } from "./css/Title";
-import "./css/Product.css";
-import { BestSellerTitle } from "./css/BestSellerTitle";
-import { ProductConsumer } from "../context";
+import { Title } from "../css/Title";
+import "../css/Product.css";
+import { BestSellerTitle } from "../css/BestSellerTitle";
+import { ProductConsumer } from "../../context";
 
 export default class AppleList extends Component {
   render() {

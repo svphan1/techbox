@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./css/Product.css";
-import { ProductConsumer } from "../context";
+import "../css/Product.css";
+import { ProductConsumer } from "../../context";
 import { Link } from "react-router-dom";
-import { DetailsButton } from "./css/DetailsButton.js";
+import { DetailsButton } from "../css/DetailsButton.js";
 
 export default class Details extends Component {
   render() {
@@ -52,14 +52,14 @@ export default class Details extends Component {
                   <p className="text-muted">{info}</p>
                   {/* buttons */}
                   <div className="d-flex justify-content-start">
-                    <Link to="/apple" style={{ textDecoration: "none" }}>
+                    <Link to="/google" style={{ textDecoration: "none" }}>
                       <DetailsButton cart>Back to Products</DetailsButton>
                     </Link>
                     <DetailsButton
                       disabled={inCart ? true : false}
                       onClick={() => {
-                        value.addAppleToCart(id);
-                        value.openAppleModal(id);
+                        value.addGoogleToCart(id);
+                        value.openGoogleModal(id);
                       }}
                     >
                       {inCart ? "In Cart" : "Add to Cart"}

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Google from "./Google";
-import { Title } from "./css/Title";
-import "./css/Product.css";
-import { BestSellerTitle } from "./css/BestSellerTitle";
-import { ProductConsumer } from "../context";
+import { Title } from "../css/Title";
+import "../css/Product.css";
+import { BestSellerTitle } from "../css/BestSellerTitle";
+import { ProductConsumer } from "../../context";
 
 export default class GoogleList extends Component {
   render() {

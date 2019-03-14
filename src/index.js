@@ -8,7 +8,7 @@ import { ProductProvider } from "./context";
 
 ReactDOM.render(
   <ProductProvider>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <App />
     </Router>
   </ProductProvider>,
